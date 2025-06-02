@@ -1,0 +1,521 @@
+<!doctype html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>À Propos</title>
+    <link rel="stylesheet" href="./Css/AboutUs.css">
+    <link rel="shortcut icon" href="../Assets/Images/Logo/Mes%20Logo/Immaculat_I.webp" type="image/x-icon">
+</head>
+<body>
+    <!-- === en-tete du site === -->
+    <header class="header">
+        <div class="navs conteneur">
+            <div class="nav_1-conteneur">
+                <!--logo -->
+                <a id="nav_1-logo" href="../Index.html">
+                    <img class="logo" src="../Assets/Images/Logo/Mes%20Logo/Immaculat_I.webp" alt="logo de Blanchisserie industrielle">
+                </a>
+                <!--titre-->
+                <h1 id="titre">Blanchisserie<br>industrielle</h1>
+            </div>
+            <nav class="nav_2-nav_3-nav_4-conteneur">
+                <div class="nav_2-conteneur">
+                    <!--barre de navigation du haut -->
+                    <ul>
+                        <li>
+                            <a id="nav_2-btn1" class="nav_2-btn" href="#">
+                                <svg class="svg-social-media header-svg-social-media1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50 50">
+                                    <path d="M 9 4 C 6.2504839 4 4 6.2504839 4 9 L 4 41 C 4 43.749516 6.2504839 46 9 46 L 25.832031 46 A 1.0001 1.0001 0 0 0 26.158203 46 L 31.832031 46 A 1.0001 1.0001 0 0 0 32.158203 46 L 41 46 C 43.749516 46 46 43.749516 46 41 L 46 9 C 46 6.2504839 43.749516 4 41 4 L 9 4 z M 9 6 L 41 6 C 42.668484 6 44 7.3315161 44 9 L 44 41 C 44 42.668484 42.668484 44 41 44 L 33 44 L 33 30 L 36.820312 30 L 38.220703 23 L 33 23 L 33 21 C 33 20.442508 33.05305 20.398929 33.240234 20.277344 C 33.427419 20.155758 34.005822 20 35 20 L 38 20 L 38 14.369141 L 37.429688 14.097656 C 37.429688 14.097656 35.132647 13 32 13 C 29.75 13 27.901588 13.896453 26.71875 15.375 C 25.535912 16.853547 25 18.833333 25 21 L 25 23 L 22 23 L 22 30 L 25 30 L 25 44 L 9 44 C 7.3315161 44 6 42.668484 6 41 L 6 9 C 6 7.3315161 7.3315161 6 9 6 z M 32 15 C 34.079062 15 35.38736 15.458455 36 15.701172 L 36 18 L 35 18 C 33.849178 18 32.926956 18.0952 32.150391 18.599609 C 31.373826 19.104024 31 20.061492 31 21 L 31 25 L 35.779297 25 L 35.179688 28 L 31 28 L 31 44 L 27 44 L 27 28 L 24 28 L 24 25 L 27 25 L 27 21 C 27 19.166667 27.464088 17.646453 28.28125 16.625 C 29.098412 15.603547 30.25 15 32 15 z"></path>
+                                </svg>
+                            </a>
+                        </li>
+                        <li>
+                            <a id="nav_2-btn2" class="nav_2-btn" href="#">
+                                <svg class="svg-social-media header-svg-social-media2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50 50">
+                                    <path d="M 16 3 C 8.8324839 3 3 8.8324839 3 16 L 3 34 C 3 41.167516 8.8324839 47 16 47 L 34 47 C 41.167516 47 47 41.167516 47 34 L 47 16 C 47 8.8324839 41.167516 3 34 3 L 16 3 z M 16 5 L 34 5 C 40.086484 5 45 9.9135161 45 16 L 45 34 C 45 40.086484 40.086484 45 34 45 L 16 45 C 9.9135161 45 5 40.086484 5 34 L 5 16 C 5 9.9135161 9.9135161 5 16 5 z M 37 11 A 2 2 0 0 0 35 13 A 2 2 0 0 0 37 15 A 2 2 0 0 0 39 13 A 2 2 0 0 0 37 11 z M 25 14 C 18.936712 14 14 18.936712 14 25 C 14 31.063288 18.936712 36 25 36 C 31.063288 36 36 31.063288 36 25 C 36 18.936712 31.063288 14 25 14 z M 25 16 C 29.982407 16 34 20.017593 34 25 C 34 29.982407 29.982407 34 25 34 C 20.017593 34 16 29.982407 16 25 C 16 20.017593 20.017593 16 25 16 z"></path>
+                                </svg>
+                            </a>
+                        </li>
+                        <li>
+                            <a id="nav_2-btn3" class="nav_2-btn" href="#">
+                                <svg class="svg-social-media header-svg-social-media3" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50 50">
+                                    <path d="M 11 4 C 7.1456661 4 4 7.1456661 4 11 L 4 39 C 4 42.854334 7.1456661 46 11 46 L 39 46 C 42.854334 46 46 42.854334 46 39 L 46 11 C 46 7.1456661 42.854334 4 39 4 L 11 4 z M 11 6 L 39 6 C 41.773666 6 44 8.2263339 44 11 L 44 39 C 44 41.773666 41.773666 44 39 44 L 11 44 C 8.2263339 44 6 41.773666 6 39 L 6 11 C 6 8.2263339 8.2263339 6 11 6 z M 13.085938 13 L 22.308594 26.103516 L 13 37 L 15.5 37 L 23.4375 27.707031 L 29.976562 37 L 37.914062 37 L 27.789062 22.613281 L 36 13 L 33.5 13 L 26.660156 21.009766 L 21.023438 13 L 13.085938 13 z M 16.914062 15 L 19.978516 15 L 34.085938 35 L 31.021484 35 L 16.914062 15 z"></path>
+                                </svg>
+                            </a>
+                        </li>
+                        <li>
+                            <a id="nav_2-btn4" class="nav_2-btn" href="#">
+                                <svg class="svg-social-media header-svg-social-media3" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50 50">
+                                    <path d="M 9 4 C 6.2504839 4 4 6.2504839 4 9 L 4 41 C 4 43.749516 6.2504839 46 9 46 L 41 46 C 43.749516 46 46 43.749516 46 41 L 46 9 C 46 6.2504839 43.749516 4 41 4 L 9 4 z M 9 6 L 41 6 C 42.668484 6 44 7.3315161 44 9 L 44 41 C 44 42.668484 42.668484 44 41 44 L 9 44 C 7.3315161 44 6 42.668484 6 41 L 6 9 C 6 7.3315161 7.3315161 6 9 6 z M 14 11.011719 C 12.904779 11.011719 11.919219 11.339079 11.189453 11.953125 C 10.459687 12.567171 10.011719 13.484511 10.011719 14.466797 C 10.011719 16.333977 11.631285 17.789609 13.691406 17.933594 A 0.98809878 0.98809878 0 0 0 13.695312 17.935547 A 0.98809878 0.98809878 0 0 0 14 17.988281 C 16.27301 17.988281 17.988281 16.396083 17.988281 14.466797 A 0.98809878 0.98809878 0 0 0 17.986328 14.414062 C 17.884577 12.513831 16.190443 11.011719 14 11.011719 z M 14 12.988281 C 15.392231 12.988281 15.94197 13.610038 16.001953 14.492188 C 15.989803 15.348434 15.460091 16.011719 14 16.011719 C 12.614594 16.011719 11.988281 15.302225 11.988281 14.466797 C 11.988281 14.049083 12.140703 13.734298 12.460938 13.464844 C 12.78117 13.19539 13.295221 12.988281 14 12.988281 z M 11 19 A 1.0001 1.0001 0 0 0 10 20 L 10 39 A 1.0001 1.0001 0 0 0 11 40 L 17 40 A 1.0001 1.0001 0 0 0 18 39 L 18 33.134766 L 18 20 A 1.0001 1.0001 0 0 0 17 19 L 11 19 z M 20 19 A 1.0001 1.0001 0 0 0 19 20 L 19 39 A 1.0001 1.0001 0 0 0 20 40 L 26 40 A 1.0001 1.0001 0 0 0 27 39 L 27 29 C 27 28.170333 27.226394 27.345035 27.625 26.804688 C 28.023606 26.264339 28.526466 25.940057 29.482422 25.957031 C 30.468166 25.973981 30.989999 26.311669 31.384766 26.841797 C 31.779532 27.371924 32 28.166667 32 29 L 32 39 A 1.0001 1.0001 0 0 0 33 40 L 39 40 A 1.0001 1.0001 0 0 0 40 39 L 40 28.261719 C 40 25.300181 39.122788 22.95433 37.619141 21.367188 C 36.115493 19.780044 34.024172 19 31.8125 19 C 29.710483 19 28.110853 19.704889 27 20.423828 L 27 20 A 1.0001 1.0001 0 0 0 26 19 L 20 19 z M 12 21 L 16 21 L 16 33.134766 L 16 38 L 12 38 L 12 21 z M 21 21 L 25 21 L 25 22.560547 A 1.0001 1.0001 0 0 0 26.798828 23.162109 C 26.798828 23.162109 28.369194 21 31.8125 21 C 33.565828 21 35.069366 21.582581 36.167969 22.742188 C 37.266572 23.901794 38 25.688257 38 28.261719 L 38 38 L 34 38 L 34 29 C 34 27.833333 33.720468 26.627107 32.990234 25.646484 C 32.260001 24.665862 31.031834 23.983076 29.517578 23.957031 C 27.995534 23.930001 26.747519 24.626988 26.015625 25.619141 C 25.283731 26.611293 25 27.829667 25 29 L 25 38 L 21 38 L 21 21 z"></path>
+                                </svg>
+                            </a>
+                        </li>
+                        <!-- === icon de connection ou de souscription ==-->
+                        <li>
+                            <a id="nav_2-btn5" class="btn-se-connect" href="./Connection&Enregistrement.html">
+                                <svg class="svg-icon-user" xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960">
+                                    <path d="M185-80q-17 0-29.5-12.5T143-122v-105q0-90 56-159t144-88q-40 28-62 70.5T259-312v190q0 11 3 22t10 20h-87Zm147 0q-17 0-29.5-12.5T290-122v-190q0-70 49.5-119T459-480h189q70 0 119 49t49 119v64q0 70-49 119T648-80H332Zm148-484q-66 0-112-46t-46-112q0-66 46-112t112-46q66 0 112 46t46 112q0 66-46 112t-112 46Z"/>
+                                </svg>
+                                <span>Se connecter</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <!--=== barre de navigation du bas vers les pages ===-->
+                <div class="nav_3-conteneur">
+                    <ul>
+                        <li><a id="nav_3-btn1" class="nav_3-btn" href="../Index.html">Acceuil</a></li>
+                        <li><a id="nav_3-btn2" class="nav_3-btn" href="./Linges.html">Linges</a></li>
+                        <li><a id="nav_3-btn3" class="nav_3-btn" href="./Chaussures.html">Chaussures</a></li>
+                        <li><a id="nav_3-btn4" class="nav_3-btn" href="./Tarifs.html">Tarifs</a></li>
+                        <li><a id="nav_3-btn5" class="nav_3-btn" href="./Produits.html">Produits</a></li>
+                        <li><a id="nav_3-btn6" class="nav_3-btn page-courrant" href="./AboutUs.html">À Propos</a></li>
+                        <li><a id="nav_3-btn7" class="nav_3-btn" href="./ContactUs.html">Contacte</a></li>
+                    </ul>
+                </div>
+                <div class="nav_4-conteneur">
+                    <!--barre de navigation pour petit media (menu hamburger) -->
+                    <ul>
+                        <li class="nav_4-menu">
+                            <label for="main_6-input">
+                                <svg id="nav_4-menu-hamburger" class="nav_4-btn"
+                                     xmlns="http://www.w3.org/2000/svg"
+                                     viewBox="0 -960 960 960">
+                                    <path  d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/>
+                                </svg>
+                            </label>
+                            <input type="checkbox" name="main_6-input" id="main_6-input">
+                            <ul class="nav_4-sous-menu">
+                                <li><a id="nav_4-btn2" class="nav_4-btn" href="./Linges.html">Linges</a></li>
+                                <li><a id="nav_4-btn3" class="nav_4-btn" href="./Chaussures.html">Chaussures</a></li>
+                                <li><a id="nav_4-btn4" class="nav_4-btn" href="./Tarifs.html">Tarifs & Abonnements</a></li>
+                                <li><a id="nav_4-btn5" class="nav_4-btn" href="./Produits.html">Produits</a></li>
+                                <li><a id="nav_4-btn6" class="nav_4-btn page-courrant" href="./AboutUs.html">À Propos</a></li>
+                                <li><a id="nav_4-btn7" class="nav_4-btn" href="./ContactUs.html">Contacte</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+    </header>
+    <!-- === corps du site === -->
+    <section class="section_banniere">
+        <div class="conteneur container-titre">
+            <div class="titre-deco"></div>
+            <div class="ctn-titre-pricinpale">
+                <h2 class="titre-pricinpale"> À PROPOS DE NOUS</h2>
+
+                <div class="nav-relative">
+                    <a class="nav-relative-1" href="../Index.html">Acceuill</a>
+                    <svg class="nav-relative-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960">
+                        <path d="M400-80 0-480l400-400 71 71-329 329 329 329-71 71Z"/>
+                    </svg>
+                    <svg class="nav-relative-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960">
+                        <path d="M400-80 0-480l400-400 71 71-329 329 329 329-71 71Z"/>
+                    </svg>
+                    <span class="nav-relative-2">À Propos</span>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="section_reference">
+        <div class="conteneur container-img-reference">
+            <div class="img-deco">
+                <img class="img-reference" src="../Assets/Images/repassage.jpg" alt="image deco">
+                <div class="ctn-exp-text">
+                    <svg class="ctn-exp-text-design" xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960" >
+                        <path d="M480-160q75 0 127.5-52.5T660-340q0-75-52.5-127.5T480-520q-75 0-127.5 52.5T300-340q0 75 52.5 127.5T480-160ZM363-572q20-11 42.5-17.5T451-598L350-800H250l113 228Zm234 0 114-228H610l-85 170 19 38q14 4 27 8.5t26 11.5ZM256-208q-17-29-26.5-62.5T220-340q0-36 9.5-69.5T256-472q-42 14-69 49.5T160-340q0 47 27 82.5t69 49.5Zm448 0q42-14 69-49.5t27-82.5q0-47-27-82.5T704-472q17 29 26.5 62.5T740-340q0 36-9.5 69.5T704-208ZM480-80q-40 0-76.5-11.5T336-123q-9 2-18 2.5t-19 .5q-91 0-155-64T80-339q0-87 58-149t143-69L120-880h280l80 160 80-160h280L680-559q85 8 142.5 70T880-340q0 92-64 156t-156 64q-9 0-18.5-.5T623-123q-31 20-67 31.5T480-80Zm0-260ZM363-572 250-800l113 228Zm234 0 114-228-114 228ZM406-230l28-91-74-53h91l29-96 29 96h91l-74 53 28 91-74-56-74 56Z"/>
+                    </svg>
+                    <svg class="ctn-exp-text-design" xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960" >
+                        <path d="M480-160q75 0 127.5-52.5T660-340q0-75-52.5-127.5T480-520q-75 0-127.5 52.5T300-340q0 75 52.5 127.5T480-160ZM363-572q20-11 42.5-17.5T451-598L350-800H250l113 228Zm234 0 114-228H610l-85 170 19 38q14 4 27 8.5t26 11.5ZM256-208q-17-29-26.5-62.5T220-340q0-36 9.5-69.5T256-472q-42 14-69 49.5T160-340q0 47 27 82.5t69 49.5Zm448 0q42-14 69-49.5t27-82.5q0-47-27-82.5T704-472q17 29 26.5 62.5T740-340q0 36-9.5 69.5T704-208ZM480-80q-40 0-76.5-11.5T336-123q-9 2-18 2.5t-19 .5q-91 0-155-64T80-339q0-87 58-149t143-69L120-880h280l80 160 80-160h280L680-559q85 8 142.5 70T880-340q0 92-64 156t-156 64q-9 0-18.5-.5T623-123q-31 20-67 31.5T480-80Zm0-260ZM363-572 250-800l113 228Zm234 0 114-228-114 228ZM406-230l28-91-74-53h91l29-96 29 96h91l-74 53 28 91-74-56-74 56Z"/>
+                    </svg>
+                    <p class="exp-text">
+                        <span>20</span>
+                        <span>Années d'experience</span>
+                    </p>
+                </div>
+            </div>
+            <div class="contenue-reference">
+                <h2 class="titre-reference">Traitement de qualité</h2>
+                <p class="texte-reference">
+                    Decouvrez nos services de blachisserie et de nettoyage à sec de premier choix.
+                    Nous offrons un traitement expert des matieres delicats, des solutions de nettoyage
+                    à sec economiques, des controles de qualité rigoureux et des services rapides,
+                    efficaces et innovantes.
+                </p>
+                <ul class="list-reference">
+                    <li>
+                        <svg class="svg-list-ref" xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960" >
+                            <path d="M216-176q-45-45-70.5-104T120-402q0-63 24-124.5T222-642q35-35 86.5-60t122-39.5Q501-756 591.5-759t202.5 7q8 106 5 195t-16.5 160.5q-13.5 71.5-38 125T684-182q-53 53-112.5 77.5T450-80q-65 0-127-25.5T216-176Zm112-16q29 17 59.5 24.5T450-160q46 0 91-18.5t86-59.5q18-18 36.5-50.5t32-85Q709-426 716-500.5t2-177.5q-49-2-110.5-1.5T485-670q-61 9-116 29t-90 55q-45 45-62 89t-17 85q0 59 22.5 103.5T262-246q42-80 111-153.5T534-520q-72 63-125.5 142.5T328-192Zm0 0Zm0 0Z"/>
+                        </svg>
+                        <p>Expert en traitements de matiere delicats</p>
+                    </li>
+                    <li>
+                        <svg class="svg-list-ref" xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960" >
+                            <path d="M216-176q-45-45-70.5-104T120-402q0-63 24-124.5T222-642q35-35 86.5-60t122-39.5Q501-756 591.5-759t202.5 7q8 106 5 195t-16.5 160.5q-13.5 71.5-38 125T684-182q-53 53-112.5 77.5T450-80q-65 0-127-25.5T216-176Zm112-16q29 17 59.5 24.5T450-160q46 0 91-18.5t86-59.5q18-18 36.5-50.5t32-85Q709-426 716-500.5t2-177.5q-49-2-110.5-1.5T485-670q-61 9-116 29t-90 55q-45 45-62 89t-17 85q0 59 22.5 103.5T262-246q42-80 111-153.5T534-520q-72 63-125.5 142.5T328-192Zm0 0Zm0 0Z"/>
+                        </svg>
+                        <p>Solutions de nettoyage économique et ecologique</p>
+                    </li>
+                    <li>
+                        <svg class="svg-list-ref" xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960" >
+                            <path d="M216-176q-45-45-70.5-104T120-402q0-63 24-124.5T222-642q35-35 86.5-60t122-39.5Q501-756 591.5-759t202.5 7q8 106 5 195t-16.5 160.5q-13.5 71.5-38 125T684-182q-53 53-112.5 77.5T450-80q-65 0-127-25.5T216-176Zm112-16q29 17 59.5 24.5T450-160q46 0 91-18.5t86-59.5q18-18 36.5-50.5t32-85Q709-426 716-500.5t2-177.5q-49-2-110.5-1.5T485-670q-61 9-116 29t-90 55q-45 45-62 89t-17 85q0 59 22.5 103.5T262-246q42-80 111-153.5T534-520q-72 63-125.5 142.5T328-192Zm0 0Zm0 0Z"/>
+                        </svg>
+                        <p>Controles rigoureux et une assurance de qualité</p>
+                    </li>
+                    <li>
+                        <svg class="svg-list-ref" xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960" >
+                            <path d="M216-176q-45-45-70.5-104T120-402q0-63 24-124.5T222-642q35-35 86.5-60t122-39.5Q501-756 591.5-759t202.5 7q8 106 5 195t-16.5 160.5q-13.5 71.5-38 125T684-182q-53 53-112.5 77.5T450-80q-65 0-127-25.5T216-176Zm112-16q29 17 59.5 24.5T450-160q46 0 91-18.5t86-59.5q18-18 36.5-50.5t32-85Q709-426 716-500.5t2-177.5q-49-2-110.5-1.5T485-670q-61 9-116 29t-90 55q-45 45-62 89t-17 85q0 59 22.5 103.5T262-246q42-80 111-153.5T534-520q-72 63-125.5 142.5T328-192Zm0 0Zm0 0Z"/>
+                        </svg>
+                        <p>Services efficaces avec delais d'execution rapides</p>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section>
+    <section class="section_mission">
+        <div class="conteneur contenue_mission">
+            <div class="ctn-mission-deco"></div>
+            <div class="ctn-mission">
+                <h2 class="titre_mission">Notre Mission</h2>
+                <h3 class="sous-titre-mission">Une tenue et un environnement propre et durable</h3>
+                <p>
+                    Chez Blanchisserie Industriel, notre mission est d'encourager nos clients en leur fournissant
+                    le soutien, les ressources et les conseils necessaires pour qu'ils deviennent des experts
+                    dans l'entretien de leurs vetements.
+                </p>
+                <ul class="liste_mission">
+                    <li>
+                        <svg class="svg-list-mission" xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960" >
+                            <path d="M480-100q-133 0-226.5-92T160-416q0-63 24.5-120.5T254-638l226-222 226 222q45 44 69.5 101.5T800-416q0 132-93.5 224T480-100Z"/>
+                        </svg>
+                        <p>
+                            <span>Soins premium</span> <br>
+                            Nous nous engageons à offrir un entretien de qualité superieure à chaque service,
+                            en favorisant une culture d'excellence et d'assurance qualité.
+                        </p>
+                    </li>
+                    <li>
+                        <svg class="svg-list-mission" xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960" >
+                            <path d="M475-160q4 0 8-2t6-4l328-328q12-12 17.5-27t5.5-30q0-16-5.5-30.5T817-607L647-777q-11-12-25.5-17.5T591-800q-15 0-30 5.5T534-777l-11 11 74 75q15 14 22 32t7 38q0 42-28.5 70.5T527-522q-20 0-38.5-7T456-550l-75-74-175 175q-3 3-4.5 6.5T200-435q0 8 6 14.5t14 6.5q4 0 8-2t6-4l136-136 56 56-135 136q-3 3-4.5 6.5T285-350q0 8 6 14t14 6q4 0 8-2t6-4l136-135 56 56-135 136q-3 2-4.5 6t-1.5 8q0 8 6 14t14 6q4 0 7.5-1.5t6.5-4.5l136-135 56 56-136 136q-3 3-4.5 6.5T454-180q0 8 6.5 14t14.5 6Zm-1 80q-37 0-65.5-24.5T375-166q-34-5-57-28t-28-57q-34-5-56.5-28.5T206-336q-38-5-62-33t-24-66q0-20 7.5-38.5T149-506l232-231 131 131q2 3 6 4.5t8 1.5q9 0 15-5.5t6-14.5q0-4-1.5-8t-4.5-6L398-777q-11-12-25.5-17.5T342-800q-15 0-30 5.5T285-777L144-635q-9 9-15 21t-8 24q-2 12 0 24.5t8 23.5l-58 58q-17-23-25-50.5T40-590q2-28 14-54.5T87-692l141-141q24-23 53.5-35t60.5-12q31 0 60.5 12t52.5 35l11 11 11-11q24-23 53.5-35t60.5-12q31 0 60.5 12t52.5 35l169 169q23 23 35 53t12 61q0 31-12 60.5T873-437L545-110q-14 14-32.5 22T474-80Zm-99-560Z"/>
+                        </svg>
+                        <p>
+                            <span>Accessibilité</span><br>
+                            Nous proposons des services de blanchesserie et de nettoyage abordables, rendant
+                            l'entretien qualité accessible à tous les membres de la commumauté.
+                        </p>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section>
+    <section class="section_equipes">
+        <div class="conteneur conteneur-equipe">
+            <div class="conteneur-titre">
+                <h2 class="titre_equipe">Notre equipe</h2>
+                <p class="note-equipe">
+                    Composée de professionnels passionnés et engagés,
+                    experts dans le soin des textiles et le nettoyage à sec.
+                </p>
+            </div>
+            <div class="ctn-membres">
+                <div class="membre membre1">
+                    <div class="ctn-img-deco">
+                        <img class="img-membre" src="#" alt="membre1">
+                    </div>
+                    <div class="ctn-info">
+                        <div class="infos-membre">
+                            <span>NOM</span>
+                            <h3 class="nom_membre nom_membre-1">Nom</h3>
+                            <p class="post-membre post-membre-1">
+                                Poste :
+                                <span>
+                                    Poste 1
+                                </span>
+                            </p>
+                            <p class="special-membre special-membre-1">
+                                Ce membre de l'équipe apporte son savoir-faire et son engagement pour garantir un service de qualité.
+                                Son expertise dans
+                                <span class="domaine-1">[domaine spécifique]</span>
+                                permet d'assurer des prestations efficaces et adaptées aux besoins des clients.
+                            </p>
+                        </div>
+                        <svg class="svg-ctn-info" xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960">
+                            <path d="m344-60-76-128-144-32 14-148-98-112 98-112-14-148 144-32 76-128 136 58 136-58 76 128 144 32-14 148 98 112-98 112 14 148-144 32-76 128-136-58-136 58Zm34-102 102-44 104 44 56-96 110-26-10-112 74-84-74-86 10-112-110-24-58-96-102 44-104-44-56 96-110 24 10 112-74 86 74 84-10 114 110 24 58 96Zm102-318Zm0 200q17 0 28.5-11.5T520-320q0-17-11.5-28.5T480-360q-17 0-28.5 11.5T440-320q0 17 11.5 28.5T480-280Zm-40-160h80v-240h-80v240Z"/>
+                        </svg>
+                    </div>
+                </div>
+                <div class="membre membre2">
+                    <div class="ctn-img-deco">
+                        <img class="img-membre" src="#" alt="membre2">
+                    </div>
+                    <div class="ctn-info">
+                        <div class="infos-membre">
+                            <span>NOM</span>
+                            <h3 class="nom_membre nom_membre-2">Nom</h3>
+                            <p class="post-membre post-membre-2">
+                                Poste :
+                                <span>
+                                    Poste 2
+                                </span>
+                            </p>
+                            <p class="special-membre special-membre-2">
+                                Ce membre de l'équipe apporte son savoir-faire et son engagement pour garantir un service de qualité.
+                                Son expertise dans
+                                <span class="domaine-2">[domaine spécifique]</span>
+                                permet d'assurer des prestations efficaces et adaptées aux besoins des clients.
+                            </p>
+                        </div>
+                        <svg class="svg-ctn-info" xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960">
+                            <path d="m344-60-76-128-144-32 14-148-98-112 98-112-14-148 144-32 76-128 136 58 136-58 76 128 144 32-14 148 98 112-98 112 14 148-144 32-76 128-136-58-136 58Zm34-102 102-44 104 44 56-96 110-26-10-112 74-84-74-86 10-112-110-24-58-96-102 44-104-44-56 96-110 24 10 112-74 86 74 84-10 114 110 24 58 96Zm102-318Zm0 200q17 0 28.5-11.5T520-320q0-17-11.5-28.5T480-360q-17 0-28.5 11.5T440-320q0 17 11.5 28.5T480-280Zm-40-160h80v-240h-80v240Z"/>
+                        </svg>
+                    </div>
+                </div>
+                <div class="membre membre3">
+                    <div class="ctn-img-deco">
+                        <img class="img-membre" src="#" alt="membre3">
+                    </div>
+                    <div class="ctn-info">
+                        <div class="infos-membre">
+                            <span>NOM</span>
+                            <h3 class="nom_membre nom_membre-3">Nom</h3>
+                            <p class="post-membre post-membre-3">
+                                Poste :
+                                <span>
+                                    Poste 3
+                                </span>
+                            </p>
+                            <p class="special-membre special-membre-3">
+                                Ce membre de l'équipe apporte son savoir-faire et son engagement pour garantir un service de qualité.
+                                Son expertise dans
+                                <span class="domaine-3">[domaine spécifique]</span>
+                                permet d'assurer des prestations efficaces et adaptées aux besoins des clients.
+                            </p>
+                        </div>
+                        <svg class="svg-ctn-info" xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960">
+                            <path d="m344-60-76-128-144-32 14-148-98-112 98-112-14-148 144-32 76-128 136 58 136-58 76 128 144 32-14 148 98 112-98 112 14 148-144 32-76 128-136-58-136 58Zm34-102 102-44 104 44 56-96 110-26-10-112 74-84-74-86 10-112-110-24-58-96-102 44-104-44-56 96-110 24 10 112-74 86 74 84-10 114 110 24 58 96Zm102-318Zm0 200q17 0 28.5-11.5T520-320q0-17-11.5-28.5T480-360q-17 0-28.5 11.5T440-320q0 17 11.5 28.5T480-280Zm-40-160h80v-240h-80v240Z"/>
+                        </svg>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="section_partenaire">
+        <div class="conteneur conteneur_partenaire">
+            <div class="conteneur-gauche-ptn">
+                <div class="ctn-gauche-ptn ctn-gauche-ptn-img">
+                    <img class="img-ptn-gauche" src="../Assets/Images/360_F_62271330_1P1xvfXRgSt7Q5TPU8azPUSgyj7kFeF7.jpg" alt="img-ptn-gauche-ptn">
+                </div>
+                <div class="ctn-gauche-ptn ctn-gauche-ptn-text">
+                    <h3 class="gauche-ptn-nom">Partenaire</h3>
+                    <div class="ctn-desc">
+                        <img class="logo-ptn-gauche" src="#" alt="logo-ptn-gauche">
+                        <p class="gauche-ptn-descrition">
+                            Notre partenariat avec <span>[Nom du partenaire]</span>
+                            repose sur une collaboration solide et une vision commune d’excellence.
+                            <br>
+                            ✅ Des services et produits de hauts standards <br>
+                            ✅ Une approche moderne et efficace <br>
+                            ✅ Une relation durable et bénéfique
+                        </p>
+                    </div>
+                    <a class="btn gauche-ptn-btn" href="#">Voir le partenaire</a>
+                </div>
+            </div>
+            <div class="conteneur-droite-ptn">
+                <div class="ctn-titre-partenaire">
+                    <h2 class="titre-partenaire">Nos Partenaires</h2>
+                    <p class="note-partenaire">
+                        Nous collaborons avec des partenaires de confiance pour
+                        garantir des services de qualité et une expertise reconnue.
+                    </p>
+                </div>
+                <div class="ctn-infos-partenaire">
+                    <div class="infos-partenaire">
+                        <div class="ptn partenaire-1">
+                            <div class="logo-ptn logo-ptn-1">
+                                <img class="logo-img-ptn-1" src="#" alt="logo-ptn-1">
+                            </div>
+                            <h3 class="nom-ptn nom-ptn-1">Partenaire</h3>
+                        </div>
+                        <div class="ptn partenaire-2">
+                            <div class="logo-ptn logo-ptn-2">
+                                <img class="logo-img-ptn-2" src="#" alt="logo-ptn-2">
+                            </div>
+                            <h3 class="nom-ptn nom-ptn-2">Partenaire</h3>
+                        </div>
+                        <div class="ptn partenaire-3">
+                            <div class="logo-ptn logo-ptn-3">
+                                <img class="logo-img-ptn-3" src="#" alt="logo-ptn-3">
+                            </div>
+                            <h3 class="nom-ptn nom-ptn-3">Partenaire</h3>
+                        </div>
+                        <div class="ptn partenaire-4">
+                            <div class="logo-ptn logo-ptn-4">
+                                <img class="logo-img-ptn-4" src="#" alt="logo-ptn-4">
+                            </div>
+                            <h3 class="nom-ptn nom-ptn-4">Partenaire</h3>
+                        </div>
+                        <div class="ptn partenaire-5">
+                            <div class="logo-ptn logo-ptn-5">
+                                <img class="logo-img-ptn-5" src="#" alt="logo-ptn-5">
+                            </div>
+                            <h3 class="nom-ptn nom-ptn-5">Partenaire</h3>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- === pieds du site === -->
+    <footer>
+        <!-- === background design : vague === -->
+        <div class="conteneur footer-background "></div>
+        <!-- === pieds du site : top === -->
+        <div class="conteneur footer-information">
+            <a href="../Index.html" class="footer-information-logo-1">
+                <img class="logo" src="../Assets/Images/Logo/Mes%20Logo/Immaculat_I.webp" alt="logo-footer">
+            </a>
+            <div class="footer-desc">
+                <p>
+                    ©Blanchisserie Ind. 2025 <br>
+                    Avec expertise, passion, propreté,
+                    fraîcheur et durabilité au
+                    rendez-vous pour un style impeccable en toute occasion.
+                </p>
+                <div class="footer-social-media-ctn">
+                    <a href="#" class="footer-social-media footer-social-media-1">
+                        <svg class="svg-social-media footer-svg-social-media-1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50 50">
+                            <path d="M41,4H9C6.24,4,4,6.24,4,9v32c0,2.76,2.24,5,5,5h32c2.76,0,5-2.24,5-5V9C46,6.24,43.76,4,41,4z M37,19h-2c-2.14,0-3,0.5-3,2 v3h5l-1,5h-4v15h-5V29h-4v-5h4v-3c0-4,2-7,6-7c2.9,0,4,1,4,1V19z"></path>
+                        </svg>
+                    </a>
+                    <a href="#" class="footer-social-media footer-social-media-2">
+                        <svg class="svg-social-media footer-svg-social-media-2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50 50">
+                            <path d="M 16 3 C 8.83 3 3 8.83 3 16 L 3 34 C 3 41.17 8.83 47 16 47 L 34 47 C 41.17 47 47 41.17 47 34 L 47 16 C 47 8.83 41.17 3 34 3 L 16 3 z M 37 11 C 38.1 11 39 11.9 39 13 C 39 14.1 38.1 15 37 15 C 35.9 15 35 14.1 35 13 C 35 11.9 35.9 11 37 11 z M 25 14 C 31.07 14 36 18.93 36 25 C 36 31.07 31.07 36 25 36 C 18.93 36 14 31.07 14 25 C 14 18.93 18.93 14 25 14 z M 25 16 C 20.04 16 16 20.04 16 25 C 16 29.96 20.04 34 25 34 C 29.96 34 34 29.96 34 25 C 34 20.04 29.96 16 25 16 z"></path>
+                        </svg>
+                    </a>
+                    <a href="#" class="footer-social-media footer-social-media-3">
+                        <svg class="svg-social-media footer-svg-social-media-2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50 50">
+                            <path d="M 11 4 C 7.134 4 4 7.134 4 11 L 4 39 C 4 42.866 7.134 46 11 46 L 39 46 C 42.866 46 46 42.866 46 39 L 46 11 C 46 7.134 42.866 4 39 4 L 11 4 z M 13.085938 13 L 21.023438 13 L 26.660156 21.009766 L 33.5 13 L 36 13 L 27.789062 22.613281 L 37.914062 37 L 29.978516 37 L 23.4375 27.707031 L 15.5 37 L 13 37 L 22.308594 26.103516 L 13.085938 13 z M 16.914062 15 L 31.021484 35 L 34.085938 35 L 19.978516 15 L 16.914062 15 z"></path>
+                        </svg>
+                    </a>
+                    <a href="#" class="footer-social-media footer-social-media-4">
+                        <svg class="svg-social-media footer-svg-social-media-2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50 50">
+                            <path d="M41,4H9C6.24,4,4,6.24,4,9v32c0,2.76,2.24,5,5,5h32c2.76,0,5-2.24,5-5V9C46,6.24,43.76,4,41,4z M17,20v19h-6V20H17z M11,14.47c0-1.4,1.2-2.47,3-2.47s2.93,1.07,3,2.47c0,1.4-1.12,2.53-3,2.53C12.2,17,11,15.87,11,14.47z M39,39h-6c0,0,0-9.26,0-10 c0-2-1-4-3.5-4.04h-0.08C27,24.96,26,27.02,26,29c0,0.91,0,10,0,10h-6V20h6v2.56c0,0,1.93-2.56,5.81-2.56 c3.97,0,7.19,2.73,7.19,8.26V39z"></path>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <!-- === pieds du site : bottom === -->
+        <div class="conteneur footer">
+            <div class="footer-conteneur">
+                <!-- === Coodonnées === -->
+                <div class="contenu-footer">
+                    <h2 class="titre-footer titre-footer-nous">
+                        Nous
+                    </h2>
+                    <div class="infos">
+                        <p class="footer-gsm">
+                            <svg class="footer-img-gsm svg-footer-info" xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960" >
+                                <path d="M280-40q-33 0-56.5-23.5T200-120v-720q0-33 23.5-56.5T280-920h400q33 0 56.5 23.5T760-840v720q0 33-23.5 56.5T680-40H280Zm0-120v40h400v-40H280Zm0-80h400v-480H280v480Zm0-560h400v-40H280v40Zm0 0v-40 40Zm0 640v40-40Z"/>
+                            </svg>
+                            <span id="gsm">+32 (0) 4 51 51 51 51</span>
+                        </p>
+                        <p class="footer-telephone">
+                            <svg class="footer-img-tel svg-footer-info" xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960">
+                                <path d="M798-120q-125 0-247-54.5T329-329Q229-429 174.5-551T120-798q0-18
+                                12-30t30-12h162q14 0 25 9.5t13 22.5l26 140q2 16-1 27t-11 19l-97 98q20 37 47.5
+                                71.5T387-386q31 31 65 57.5t72 48.5l94-94q9-9 23.5-13.5T670-390l138 28q14 4 23 14.5t9
+                                23.5v162q0 18-12 30t-30 12ZM241-600l66-66-17-94h-89q5 41 14 81t26 79Zm358 358q39 17
+                                79.5 27t81.5 13v-88l-94-19-67 67ZM241-600Zm358 358Z"/>
+                            </svg>
+                            <span id="telephone">+32 (0) 4 51 51 51 51</span>
+                        </p>
+                        <p class="footer-email">
+                            <svg class="footer-img-mail svg-footer-info" xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960">
+                                <path d="M160-160q-33 0-56.5-23.5T80-240v-480q0-33 23.5-56.5T160-800h640q33 0
+                                56.5 23.5T880-720v480q0 33-23.5 56.5T800-160H160Zm320-280L160-640v400h640v-400L480-440Zm0-80
+                                320-200H160l320 200ZM160-640v-80 480-400Z"/>
+                            </svg>
+                            <span id="mail-info">info@blanchisserie.com</span>
+                        </p>
+                        <div class="footer-adresse">
+                            <span id="footer-nom-entreprise">Blanchisserie Ind</span><br>
+                            <span id="footer-rue-entreprise">Rue du paray 154 - </span>
+                            <span id="footer-localite-entreprise">4031 Liege</span><br>
+                            <span id="footer-pays-entreprise">Belgique</span>
+                        </div>
+                    </div>
+                </div>
+                <!-- === liens rapides === -->
+                <div class="contenu-footer">
+                    <h2 class="titre-footer titre-footer-services">Liens Rapides</h2>
+                    <ul class="liens-rapides">
+                        <!-- === liens : A propos === -->
+                        <li>
+                            <a href="./AboutUs.html" class="liens-rapides-logo liens-rapides-about">
+                                <svg class="footer-img-arrow" xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960">
+                                    <path d="m321-80-71-71 329-329-329-329 71-71 400 400L321-80Z"/>
+                                </svg>
+                                <span class="footer-lien-rapide-text" id="footer-lien-about">À propos</span>
+                            </a>
+                        </li>
+                        <!-- === liens : Linges === -->
+                        <li>
+                            <a href="./Linges.html" class="liens-rapides-logo liens-rapides-services">
+                                <svg class="footer-img-arrow" xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960">
+                                    <path d="m321-80-71-71 329-329-329-329 71-71 400 400L321-80Z"/>
+                                </svg>
+                                <span class="footer-lien-rapide-text" id="footer-lien-services">Les Linges</span>
+                            </a>
+                        </li>
+                        <!-- === liens : Chaussures === -->
+                        <li>
+                            <a href="./Chaussures.html" class="liens-rapides-logo liens-rapides-horaire">
+                                <svg class="footer-img-arrow" xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960">
+                                    <path d="m321-80-71-71 329-329-329-329 71-71 400 400L321-80Z"/>
+                                </svg>
+                                <span class="footer-lien-rapide-text" id="footer-lien-horaire"> Les Chaussures</span>
+                            </a>
+                        </li>
+                        <!-- === liens : Tarifs & abonnement === -->
+                        <li>
+                            <a href="./Tarifs.html" class="liens-rapides-logo liens-rapides-prix">
+                                <svg class="footer-img-arrow" xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960">
+                                    <path d="m321-80-71-71 329-329-329-329 71-71 400 400L321-80Z"/>
+                                </svg>
+                                <span class="footer-lien-rapide-text" id="footer-lien-prix">Abonnement & Tarif</span>
+                            </a>
+                        </li>
+                        <!-- === liens : Contactez-nous === -->
+                        <li>
+                            <a href="./ContactUs.html" class="liens-rapides-logo liens-rapides-contact">
+                                <svg class="footer-img-arrow" xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960">
+                                    <path d="m321-80-71-71 329-329-329-329 71-71 400 400L321-80Z"/>
+                                </svg>
+                                <span class="footer-lien-rapide-text" id="footer-lien-contact">Contactez-nous</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <!-- === News-letters === -->
+                <div class="contenu-footer">
+                    <h2 class="titre-footer titre-footer-newsletter">Newsletter</h2>
+                    <p class="footer-news-description">
+                        lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.
+                    </p>
+                    <div class="newsletter-form">
+                        <form class="footer-form" action="#">
+                            <label for="footer-email"></label>
+                            <input type="email" name="email" id="footer-email" placeholder="Votre adresse email">
+                            <input type="submit" value="S'inscrire" id="footer-inscription-newsletter">
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

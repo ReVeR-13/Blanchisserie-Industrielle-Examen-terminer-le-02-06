@@ -1,0 +1,367 @@
+@import url(PageCommon.css);
+.conteneur {
+    margin-top: 50px;
+}
+.navs {
+    margin-top: 25px;
+}
+
+/* ---------------- section-presentation ---------------- */
+
+.section-presentation {
+    position: relative;
+    width: 100%;
+    margin: 30px auto;
+    overflow: hidden;
+}
+
+.ctn-presentation {
+    position: relative;
+    width: 100%;
+    height: 780px;
+    margin-top: 0;
+    top: 0;
+    left: 0;
+    /*border: 1px dashed var(--color-accent);*/
+}
+
+.fiche-presentation {
+    max-width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-content: center;
+    justify-content: center;
+    gap: 50px;
+    text-align: center;
+    align-items: center;
+}
+
+.titre-fiche {
+    font-size: 4rem;
+    color: var(--color-bleue-fonce);
+    text-align: center;
+    text-transform: uppercase;
+    width: 100%;
+}
+
+.text-fiche {
+    margin:0 auto;
+    width: 90%;
+    font-size: 1.5rem;
+}
+
+.btn-presentation-commande {
+    width: 250px;
+    background-color: var(--color-accent);
+    color: var(--color-blanc-poudre);
+}
+
+/* ---------------- section-tableau-prix ---------------- */
+
+/*-ctn-pack-tarif-linge-*/
+
+.section-tableau-prix {
+    display: flex;
+    flex-direction: column;
+}
+
+.ctn-pack-tarif-linge,
+.ctn-pack-tarif-chaussures {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.fiche-pack-titre {
+    width: 100%;
+    min-height: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 5px;
+    margin: 50px 0 25px 0;
+}
+
+.titre-principale {
+    width: 100%;
+    font-size: 4rem;
+    font-weight: 500;
+    color: var(--color-gris-claire);
+}
+
+.fiche-pack-items {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+}
+
+.pack-tarif {
+    max-width: calc(100% / 3);
+    min-width: 300px;
+    min-height: 500px;
+    display: flex;
+    flex-direction: column;
+    padding: 15px;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: flex-start;
+    text-align: center;
+    gap: 20px;
+}
+
+.img-pack {
+    width: 100%;
+    height: 300px;
+    object-fit: contain;
+    border: 1px dashed var(--color-bleue-fonce);
+}
+
+.titre-pack {
+    color: var(--color-bleue-fonce);
+}
+
+.fiche-pack-prix {
+    width: 100%;
+    height: 100px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 5px;
+    color: var(--color-gris-fonce);
+    background-color: var(--color-gris-claire-transparant);
+    font-size: 1.5rem;
+    font-weight: 500;
+    text-align: center;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+}
+
+.text-pack {
+    width: 100%;
+    min-height: 150px;
+}
+
+.pack-prix-afficher,
+.pack-prix-devise {
+    font-size: 3rem;
+    color: var(--color-accent);
+    font-weight: bold;
+}
+
+/* ---- section-abonnements ----*/
+
+.ctn-abonnements-items {
+    width: 100%;
+    min-height: 300px;
+    margin-top: 0;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+}
+
+.carte-abonnement {
+    position: relative;
+    width: calc((100% / 3) - 30px);
+    height: 500px;
+    margin: 15px;
+    padding: 20px;
+    background-color: var(--color-blanc-poudre);
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    transition: all 0.5s cubic-bezier(0.42, 0, 0.01, 1.42) 0.3s;
+}
+
+.carte-abonnement-etoile {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    .abonnement-etoile-svg {
+        width: 100%;
+        height: 100%;
+        fill: var(--color-blanc);
+        background-color: transparent;
+    }
+}
+
+.titre-abonnement {
+    color: var(--color-gris-fonce);
+    font-size: 2rem;
+}
+
+.prix-abonnement {
+    margin-top: 5px;
+    color: var(--color-accent);
+    font-size: 4rem;
+}
+
+.ctn-abonnement-description {
+    position: relative;
+    height: 220px;
+    transition: height 2s cubic-bezier(0.42, 0, 0.01, 1.42) 0.1s;
+}
+
+.liste-abonnement {
+    height: 100%;
+    margin-top: 10px;
+    color: var(--color-gris-fonce);
+    font-weight: lighter;
+    text-transform: capitalize;
+    padding-left: 10px;
+    gap: 5px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    visibility: visible;
+    transition: visibility 1s cubic-bezier(0.42, 0, 0.01, 1.42) 0.8s;
+}
+
+.carte-description {
+    position: absolute;
+    top: 0;
+    left: 0;
+    text-align: center;
+    visibility: hidden;
+    transition: visibility 0.3s cubic-bezier(0.42, 0, 0.01, 1.42) 0.1s;
+}
+
+.rapport-titre {
+    padding: 10px 0;
+    color: var(--color-bleue-fonce);
+}
+
+.rapport-texte {
+    font-size: 1.1rem;
+}
+
+.btn-abonnement {
+    margin: 0 auto;
+}
+
+.carte-abonnement:hover {
+    height: 590px;
+    border-top: 3px solid var(--color-bleue-fonce);
+    background-color: var(--color-gris-claire);
+    transform: scale(1.03);
+    transition: all 2s cubic-bezier(0.42, 0, 0.01, 1.42) 0.1s;
+    .ctn-abonnement-description {
+        height: 350px;
+        transition: height 2s cubic-bezier(0.42, 0, 0.01, 1.42) 1s;
+        .liste-abonnement {
+            visibility: hidden;
+            transition: visibility 0.5s cubic-bezier(0.42, 0, 0.01, 1.42) 1.2s;
+        }
+        .carte-description {
+            visibility: visible;
+            transition: visibility 0.5s cubic-bezier(0.42, 0, 0.01, 1.42) 1.4s;
+        }
+    }
+
+    .btn-abonnement {
+        color: var(--color-blanc);
+        background-color: var(--color-accent);
+        transition: background-color 0.5s cubic-bezier(0.42, 0, 0.01, 1.42) 0.1s;
+    }
+
+    .btn-abonnement:hover {
+        background-color: var(--color-gris-claire);
+        color: var(--color-accent);
+        box-shadow: var(--boutton-blanc);
+        transition: background-color 0.5s ease-out 0.2s,
+                    color 0.3s ease-out;
+    }
+
+    .btn-abonnement:active {
+        box-shadow: var(--boutton-blanc-active);
+    }
+}
+
+/* ---- section-conclusions ----*/
+
+.ctn-conclusions {
+    min-height: 400px;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.conclusions-titre {
+    font-size: 4rem;
+    text-transform: uppercase;
+    width: 100%;
+    height: 150px;
+    text-align: center;
+}
+
+.conclusions-texte {
+    width: 100%;
+    font-size: 1.2rem;
+    font-weight: 500;
+    text-align: center;
+    color: var(--color-gris-fonce);
+    span {
+        font-size: 1.6rem;
+        color: var(--color-accent);
+        text-transform: uppercase;
+    }
+}
+
+/*--------------------------------------------------------------------*/
+/* zone du responsive */
+/*--------------------------------------------------------------------*/
+@media  screen and (max-width: 1040px) {
+    .carte-abonnement {
+        width: 45%;
+    }
+}
+/* media Tablette */
+@media  screen and (max-width: 820px) {
+    .conclusions-titre,
+    .titre-fiche {
+        font-size: 3rem;
+    }
+
+    .carte-abonnement {
+        width: 50%;
+        flex-direction: column;
+    }
+
+}
+/* media smartphone */
+@media  screen and (max-width: 430px) {
+    .conclusions-titre,
+    .titre-fiche {
+        font-size: 2.5rem;
+    }
+
+    .carte-abonnement {
+        width: 100%;
+    }
+}
+/*-- Zone Sliders --*/
+

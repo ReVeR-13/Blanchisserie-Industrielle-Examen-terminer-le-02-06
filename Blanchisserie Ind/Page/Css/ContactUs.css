@@ -1,0 +1,306 @@
+/* declaration des variable */
+/*--------------------------------------------------------------------*/
+@import url(./PageCommon.css);
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: var(--color-text);
+}
+
+.conteneur-contact {
+    min-height: 550px;
+    background:  var(--color-blanc-poudre);
+}
+
+.contact{
+    padding:10px;
+    width: 100%;
+    display: flex;
+}
+
+/* Left pannel */
+/*--------------------------------------------------------------------*/
+.contact_left {
+    width: 35%;
+    height: 100%;
+    margin-top: 40px;
+}
+
+.contact-information {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 16px;
+}
+
+.footer-information-logo-1{
+    width: 80px;
+    height: 80px;
+    border: 1px dashed var(--color-accent);
+    margin: 10px 0;
+    display: flex;
+    justify-content: center;
+}
+
+.sous-titre{
+    color: var(--color-bleue-noicy);
+}
+
+.contact-information-text {
+    margin-bottom: 20px;
+    color: var(--color-gris-fonce);
+}
+
+.jour-horaire{
+    color: var(--color-accent);
+    font-weight: bold;
+}
+
+.heures-horaire {
+    color: var(--color-accent);
+    font-weight: bold;
+}
+
+.coordonnees-contact {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin: 10px 0;
+}
+
+.coordonnees {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    span {
+        color: var(--color-gris-fonce);
+        font-weight: bold;
+        padding-left: 10px;
+    }
+}
+
+.svg {
+    width: 30px;
+    height: 30px;
+    padding: 5px;
+    margin: 0 5px;
+    border: 1px solid var(--color-bleue-noicy);
+    border-radius: 50%;
+    fill: var(--color-accent);
+    background-color: transparent;
+}
+
+.coordonnees-adresse{
+    font-size: 1.3rem;
+    font-weight: 500;
+    margin: 10px 0;
+    padding-left: 15px;
+    border-left: 3px solid var(--color-bleue-noicy);
+    span {
+        color: var(--color-gris-fonce);
+        font-weight: 600;
+    }
+}
+
+.coordonnees-social-media-ctn{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: flex-start;
+    margin: 10px 0;
+}
+
+.coordonnees-social-media {
+    .svg-social-media{
+        width: 30px;
+        height: 30px;
+        fill: var(--color-bleue-fonce);
+    }
+    .svg-social-media:hover{
+        animation: anim_scaleUp_move_1 1s alternate-reverse infinite
+    }
+
+}
+
+
+/* right pannel */
+/*--------------------------------------------------------------------*/
+.contact_right {
+    padding: 2%;
+    margin-top: 10px;
+    width: 65%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    color: transparent;
+}
+
+.text-info {
+    display: flex;
+    flex-direction: row;
+    gap: 16px;
+    justify-content: space-between;
+    align-items: center;
+    align-content: center;
+    flex-wrap: wrap;
+    .message_form_corps {
+        width: 48%;
+        position: relative;
+    }
+}
+
+.message_form {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    gap: 22px;
+}
+
+.input-area,
+.input-zone {
+    width: 100%;
+    height: 38px;
+    margin-top: 10px;
+    border: none;
+    outline: none;
+    border-bottom: 1px solid var(--color-gris-fonce);
+    background-color: transparent;
+    color: var(--color-bleue-fonce);
+    padding: 0 8px;
+    font-size: 1.1rem;
+}
+
+.input-area {
+    height: 250px;
+    resize: none;
+}
+
+.textarea::-webkit-scrollbar {
+    width: 3px;
+}
+
+.textarea::-webkit-scrollbar-track {
+    background: var(--color-blanc);
+    border-radius: 15px;
+}
+
+.textarea::-webkit-scrollbar-thumb {
+    background: var(--color-accent);
+}
+
+.message_form_corps {
+    position: relative;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.message_form_label {
+    position: absolute;
+    font-size: 1.2rem;
+    top: 0;
+    left: 0;
+    width: 50px;
+    height: 38px;
+    display: flex;
+    align-items: center;
+    color: var(--color-gris-fonce);
+    pointer-events: none;
+    transition: 1s;
+}
+/*---------------- animation sur les focus ----------------------------*/
+input:focus + .message_form_label,
+textarea:focus ~ .message_form_label,
+input:valid + .message_form_label,
+textarea:valid + .message_form_label {
+    transform: translateY(-20px);
+    font-size: 1rem;
+}
+
+/* footer pannel */
+/*--------------------------------------------------------------------*/
+.footer {
+    background-color: var(--color-blanc);
+    min-height: 100px;
+}
+
+.contact_right-pub{
+    display: flex;
+    flex-direction: row-reverse;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    p{
+        max-width: 70%;
+    }
+}
+
+/*---------------- gestion des deux bouttons ----------------------------*/
+
+.inscription-btn {
+    border: 1px solid var(--color-accent);
+}
+
+.btn-message:hover{
+    background-color: transparent;
+}
+
+/*---------------- gestion des responsive----------------------------*/
+@media  screen and (max-width: 1040px) {
+
+}
+
+/* media smartphone */
+@media  screen and (max-width: 820px) {
+    .contact {
+        flex-wrap: wrap;
+        flex-direction: column-reverse;
+        transition: flex-direction 0.5s ease-in-out ;
+    }
+
+    .contact_left {
+        width: 100%;
+        margin-top: 30px;
+        transition: width 0.5s ease-in-out;
+    }
+
+    .contact_right {
+        width: 100%;
+        transition: width 0.5s ease-in-out;
+    }
+
+    .text-info > .message_form_corps {
+        width: 100%;
+        transition: width 0.5s ease-in-out;
+    }
+
+    .contact_right-pub > p {
+        width: 50%;
+    }
+
+    .inscription-btn {
+        width: 100px;
+        padding: 0 5px;
+        font-size: 1.2rem;
+        display: flex;
+        text-align: center;
+        transition: width 0.5s ease-in-out;
+    }
+}
+
+@media  screen and (max-width: 430px) {
+    .inscription-btn {
+        width: 80px;
+        padding: 0 5px;
+        font-size: 1.1rem;
+        transition: width 0.5s ease-in-out;
+    }
+    .contact_right-pub > p {
+        width: 90%;
+    }
+    .footer-information-logo-1 {
+        display: none;
+    }
+}

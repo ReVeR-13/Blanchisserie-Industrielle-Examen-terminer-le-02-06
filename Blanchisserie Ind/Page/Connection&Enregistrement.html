@@ -1,0 +1,177 @@
+<!doctype html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Connection</title>
+    <link rel="shortcut icon" href="../Assets/Images/Logo/Mes%20Logo/Immaculat_I.webp" type="image/x-icon">
+    <link rel="stylesheet" href="./Css/Connection.css">
+</head>
+<body>
+    <!-- ==  == -->
+    <main class="section">
+        <section class="conteneur">
+            <!-- == Conteneur de l'en-tete == -->
+            <header class="conteneur-deco">
+                <div class="panneaux-deco">
+                    <div class="pan-deco deco-gauche">
+                        <a href="../Index.html" class="logo-principal">
+                            <img class="logo" src="../Assets/Images/Logo/Mes%20Logo/Immaculat_I.webp" alt="Logo de l'entreprise">
+                        </a>
+                        <h2 class="deco-gauche-titre deco-titre">
+                            Bienvenue !
+                        </h2>
+                        <p class="deco-gauche-p">
+                            Vous n'avez pas encore de compte chez nous ?
+                        </p>
+                        <button class="btn deco-enregist-btn">Rejoindre</button>
+                    </div>
+
+                    <div class="pan-deco deco-droite">
+                        <a href="../Index.html" class="logo-principal">
+                            <img class="logo" src="../Assets/Images/Logo/Mes%20Logo/Immaculat_I.webp" alt="Logo de l'entreprise">
+                        </a>
+                        <h2 class="deco-droite-titre deco-titre">
+                            Bienvenue !
+                        </h2>
+                        <p class="deco-droite-p">
+                            Vous avez deja un compte de connexion...
+                        </p>
+                        <button class="btn deco-connect-btn">Connectez-vous</button>
+                    </div>
+                </div>
+            </header>
+            <!-- == Conteneur d'enregistrement == -->
+            <div class="conteneur_form enregistrement">
+                <form>
+                    <h2 class="Sous-titre Sous-titre-enregistrement">Enregistrement</h2>
+                    <!-- == enregistrement du nom d'utilisateur == -->
+                    <div class="conteneur_input">
+                        <!-- == entre du nom d'utilisateur == -->
+                        <input name="username" class="input-zone" id="input-regist-username" type="text" placeholder="Nom d'utilisateur" required>
+                        <label class="input-label" for="input-regist-username">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960">
+                                <path d="M480-480q-66 0-113-47t-47-113q0-66 47-113t113-47q66 0 113 47t47 113q0 66-47 113t-113 47ZM160-160v-112q0-34 17.5-62.5T224-378q62-31 126-46.5T480-440q66 0 130 15.5T736-378q29 15 46.5 43.5T800-272v112H160Zm80-80h480v-32q0-11-5.5-20T700-306q-54-27-109-40.5T480-360q-56 0-111 13.5T260-306q-9 5-14.5 14t-5.5 20v32Zm240-320q33 0 56.5-23.5T560-640q0-33-23.5-56.5T480-720q-33 0-56.5 23.5T400-640q0 33 23.5 56.5T480-560Zm0-80Zm0 400Z"/>
+                            </svg>
+                        </label>
+                    </div>
+                    <!-- == enregistrement du mail utilisateur == -->
+                    <div class="conteneur_input">
+                        <!-- == entre du mail== -->
+                        <input name="e-mail" class="input-zone" id="input-regist-mail" type="email" placeholder="e-mail" required>
+                        <label class="input-label" for="input-regist-mail">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960">
+                                <path d="M160-160q-33 0-56.5-23.5T80-240v-480q0-33 23.5-56.5T160-800h640q33 0 56.5 23.5T880-720v480q0 33-23.5 56.5T800-160H160Zm320-280L160-640v400h640v-400L480-440Zm0-80 320-200H160l320 200ZM160-640v-80 480-400Z"/>
+                            </svg>
+                        </label>
+                    </div>
+                    <!-- == enregistrement du mot de passe == -->
+                    <div class="conteneur_input">
+                        <input name="password" class="input-zone" id="input-regist-pwd" type="password" placeholder="Mot de passe" required>
+                        <label class="input-label" for="input-regist-pwd">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960" >
+                                <path d="M420-360h120l-23-129q20-10 31.5-29t11.5-42q0-33-23.5-56.5T480-640q-33 0-56.5 23.5T400-560q0 23 11.5 42t31.5 29l-23 129Zm60 280q-139-35-229.5-159.5T160-516v-244l320-120 320 120v244q0 152-90.5 276.5T480-80Zm0-84q104-33 172-132t68-220v-189l-240-90-240 90v189q0 121 68 220t172 132Zm0-316Z"/>
+                            </svg>
+                        </label>
+                    </div>
+                    <!-- == confirmation du mot de passe == -->
+                    <div class="conteneur_input">
+                        <input name="repassword" class="input-zone" id="input-regist-pwd-2" type="password" placeholder="Repeter le mot de passe" required>
+                        <label class="input-label" for="input-regist-pwd-2">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960" >
+                                <path d="M420-360h120l-23-129q20-10 31.5-29t11.5-42q0-33-23.5-56.5T480-640q-33 0-56.5 23.5T400-560q0 23 11.5 42t31.5 29l-23 129Zm60 280q-139-35-229.5-159.5T160-516v-244l320-120 320 120v244q0 152-90.5 276.5T480-80Zm0-84q104-33 172-132t68-220v-189l-240-90-240 90v189q0 121 68 220t172 132Zm0-316Z"/>
+                            </svg>
+                        </label>
+                    </div>
+                    <!-- == confirmation des conditions generales== -->
+                    <div class="conteneur_input conditions-generales">
+                        <label class="input-regist-label-cdm" for="input-regist-cdm">
+                            Accepter les <span> conditions generales </span>
+                        </label>
+                        <input type="checkbox" name="condition general" id="input-regist-cdm" class="input-regist-cdm" required>
+                    </div>
+                    <!-- == boutton d' enregistrement == -->
+                    <button type="submit" class="btn enregistrement-btn">Rejoindre</button>
+                    <!-- == ajoute de possibilite d'enregistrement via les reseaux sociaux == -->
+                    <p class="connection-p connection-p-1">Ou enregistrez-vous avec les platformes sociales</p>
+                    <div class="conteneur_svg-social-media">
+                        <a href="#" class="connection-svg-social-media">
+                            <svg class="svg-social-media connection-svg-social-media-1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50 50">
+                                <path d="M41,4H9C6.24,4,4,6.24,4,9v32c0,2.76,2.24,5,5,5h32c2.76,0,5-2.24,5-5V9C46,6.24,43.76,4,41,4z M37,19h-2c-2.14,0-3,0.5-3,2 v3h5l-1,5h-4v15h-5V29h-4v-5h4v-3c0-4,2-7,6-7c2.9,0,4,1,4,1V19z"></path>
+                            </svg>
+                        </a>
+                        <a href="#" class="connection-svg-social-media">
+                            <svg class="svg-social-media connection-svg-social-media-2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50 50">
+                                <path d="M 16 3 C 8.83 3 3 8.83 3 16 L 3 34 C 3 41.17 8.83 47 16 47 L 34 47 C 41.17 47 47 41.17 47 34 L 47 16 C 47 8.83 41.17 3 34 3 L 16 3 z M 37 11 C 38.1 11 39 11.9 39 13 C 39 14.1 38.1 15 37 15 C 35.9 15 35 14.1 35 13 C 35 11.9 35.9 11 37 11 z M 25 14 C 31.07 14 36 18.93 36 25 C 36 31.07 31.07 36 25 36 C 18.93 36 14 31.07 14 25 C 14 18.93 18.93 14 25 14 z M 25 16 C 20.04 16 16 20.04 16 25 C 16 29.96 20.04 34 25 34 C 29.96 34 34 29.96 34 25 C 34 20.04 29.96 16 25 16 z"></path>
+                            </svg>
+                        </a>
+                        <a href="#" class="connection-svg-social-media">
+                            <svg class="svg-social-media connection-svg-social-media-3" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50 50">
+                                <path d="M 11 4 C 7.134 4 4 7.134 4 11 L 4 39 C 4 42.866 7.134 46 11 46 L 39 46 C 42.866 46 46 42.866 46 39 L 46 11 C 46 7.134 42.866 4 39 4 L 11 4 z M 13.085938 13 L 21.023438 13 L 26.660156 21.009766 L 33.5 13 L 36 13 L 27.789062 22.613281 L 37.914062 37 L 29.978516 37 L 23.4375 27.707031 L 15.5 37 L 13 37 L 22.308594 26.103516 L 13.085938 13 z M 16.914062 15 L 31.021484 35 L 34.085938 35 L 19.978516 15 L 16.914062 15 z"></path>
+                            </svg>
+                        </a>
+                        <a href="#" class="connection-svg-social-media">
+                            <svg class="svg-social-media connection-svg-social-media-3" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50 50">
+                                <path d="M41,4H9C6.24,4,4,6.24,4,9v32c0,2.76,2.24,5,5,5h32c2.76,0,5-2.24,5-5V9C46,6.24,43.76,4,41,4z M17,20v19h-6V20H17z M11,14.47c0-1.4,1.2-2.47,3-2.47s2.93,1.07,3,2.47c0,1.4-1.12,2.53-3,2.53C12.2,17,11,15.87,11,14.47z M39,39h-6c0,0,0-9.26,0-10 c0-2-1-4-3.5-4.04h-0.08C27,24.96,26,27.02,26,29c0,0.91,0,10,0,10h-6V20h6v2.56c0,0,1.93-2.56,5.81-2.56 c3.97,0,7.19,2.73,7.19,8.26V39z"></path>
+                            </svg>
+                        </a>
+                    </div>
+                </form>
+            </div>
+            <!-- == Conteneur de connection == -->
+            <div class="conteneur_form login">
+                <form>
+                    <h2 class="Sous-titre Sous-titre-connection">Connexion</h2>
+                    <div class="conteneur_input">
+                        <!-- == entre du nom d'utilisateur == -->
+                        <input class="input-zone input-user" id="input-user" type="text" placeholder="Nom d'utilisateur" required>
+                        <label class="input-label" for="input-user">
+                            <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3">
+                                <path d="M480-480q-66 0-113-47t-47-113q0-66 47-113t113-47q66 0 113 47t47 113q0 66-47 113t-113 47ZM160-160v-112q0-34 17.5-62.5T224-378q62-31 126-46.5T480-440q66 0 130 15.5T736-378q29 15 46.5 43.5T800-272v112H160Zm80-80h480v-32q0-11-5.5-20T700-306q-54-27-109-40.5T480-360q-56 0-111 13.5T260-306q-9 5-14.5 14t-5.5 20v32Zm240-320q33 0 56.5-23.5T560-640q0-33-23.5-56.5T480-720q-33 0-56.5 23.5T400-640q0 33 23.5 56.5T480-560Zm0-80Zm0 400Z"/>
+                            </svg>
+                        </label>
+                    </div>
+                    <div class="conteneur_input">
+                        <!-- == entre du mot de passe == -->
+                        <input class="input-zone input-pwd" id="input-pwd" type="password" placeholder="Mot de passe" required>
+                        <label class="input-label" for="input-pwd">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960">
+                                <path d="M420-360h120l-23-129q20-10 31.5-29t11.5-42q0-33-23.5-56.5T480-640q-33 0-56.5 23.5T400-560q0 23 11.5 42t31.5 29l-23 129Zm60 280q-139-35-229.5-159.5T160-516v-244l320-120 320 120v244q0 152-90.5 276.5T480-80Zm0-84q104-33 172-132t68-220v-189l-240-90-240 90v189q0 121 68 220t172 132Zm0-316Z"/>
+                            </svg>
+                        </label>
+                    </div>
+                    <div class="conteneur_D-oublie">
+                        <a href="#">Mot de passe oublié ?</a>
+                    </div>
+                    <button type="submit" class="btn connection-btn">Connection</button>
+                    <p class="connection-p connection-p-1">Ou connectez-vous avec les platformes sociales</p>
+                    <div class="conteneur_svg-social-media">
+                        <a href="#" class="connection-svg-social-media">
+                            <svg class="svg-social-media connection-svg-social-media-1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50 50">
+                                <path d="M41,4H9C6.24,4,4,6.24,4,9v32c0,2.76,2.24,5,5,5h32c2.76,0,5-2.24,5-5V9C46,6.24,43.76,4,41,4z M37,19h-2c-2.14,0-3,0.5-3,2 v3h5l-1,5h-4v15h-5V29h-4v-5h4v-3c0-4,2-7,6-7c2.9,0,4,1,4,1V19z"></path>
+                            </svg>
+                        </a>
+                        <a href="#" class="connection-svg-social-media">
+                            <svg class="svg-social-media connection-svg-social-media-2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50 50">
+                                <path d="M 16 3 C 8.83 3 3 8.83 3 16 L 3 34 C 3 41.17 8.83 47 16 47 L 34 47 C 41.17 47 47 41.17 47 34 L 47 16 C 47 8.83 41.17 3 34 3 L 16 3 z M 37 11 C 38.1 11 39 11.9 39 13 C 39 14.1 38.1 15 37 15 C 35.9 15 35 14.1 35 13 C 35 11.9 35.9 11 37 11 z M 25 14 C 31.07 14 36 18.93 36 25 C 36 31.07 31.07 36 25 36 C 18.93 36 14 31.07 14 25 C 14 18.93 18.93 14 25 14 z M 25 16 C 20.04 16 16 20.04 16 25 C 16 29.96 20.04 34 25 34 C 29.96 34 34 29.96 34 25 C 34 20.04 29.96 16 25 16 z"></path>
+                            </svg>
+                        </a>
+                        <a href="#" class="connection-svg-social-media">
+                            <svg class="svg-social-media connection-svg-social-media-3" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50 50">
+                                <path d="M 11 4 C 7.134 4 4 7.134 4 11 L 4 39 C 4 42.866 7.134 46 11 46 L 39 46 C 42.866 46 46 42.866 46 39 L 46 11 C 46 7.134 42.866 4 39 4 L 11 4 z M 13.085938 13 L 21.023438 13 L 26.660156 21.009766 L 33.5 13 L 36 13 L 27.789062 22.613281 L 37.914062 37 L 29.978516 37 L 23.4375 27.707031 L 15.5 37 L 13 37 L 22.308594 26.103516 L 13.085938 13 z M 16.914062 15 L 31.021484 35 L 34.085938 35 L 19.978516 15 L 16.914062 15 z"></path>
+                            </svg>
+                        </a>
+                        <a href="#" class="connection-svg-social-media">
+                            <svg class="svg-social-media connection-svg-social-media-3" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50 50">
+                                <path d="M41,4H9C6.24,4,4,6.24,4,9v32c0,2.76,2.24,5,5,5h32c2.76,0,5-2.24,5-5V9C46,6.24,43.76,4,41,4z M17,20v19h-6V20H17z M11,14.47c0-1.4,1.2-2.47,3-2.47s2.93,1.07,3,2.47c0,1.4-1.12,2.53-3,2.53C12.2,17,11,15.87,11,14.47z M39,39h-6c0,0,0-9.26,0-10 c0-2-1-4-3.5-4.04h-0.08C27,24.96,26,27.02,26,29c0,0.91,0,10,0,10h-6V20h6v2.56c0,0,1.93-2.56,5.81-2.56 c3.97,0,7.19,2.73,7.19,8.26V39z"></path>
+                            </svg>
+                        </a>
+                    </div>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <script src="./Javascript/Connection.js"></script>
+</body>
+</html>

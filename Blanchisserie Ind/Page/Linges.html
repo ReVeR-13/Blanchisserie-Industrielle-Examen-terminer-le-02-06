@@ -1,0 +1,745 @@
+<!doctype html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Nettoyage des Linges</title>
+    <link rel="stylesheet" href="./Css/Linges.css">
+    <link rel="shortcut icon" href="../Assets/Images/Logo/Mes%20Logo/Immaculat_I.webp" type="image/x-icon">
+</head>
+<body>
+
+    <!-- === en-tete du site === -->
+    <header class="header">
+        <div class="navs conteneur">
+            <div class="nav_1-conteneur">
+                <!--logo -->
+                <a id="nav_1-logo" href="../Index.html"><img class="logo" src="../Assets/Images/Logo/Mes%20Logo/Immaculat_I.webp" alt="logo de Blanchisserie industrielle"></a>
+                <!--titre-->
+                <h1 id="titre">Blanchisserie<br>industrielle</h1>
+            </div>
+            <nav class="nav_2-nav_3-nav_4-conteneur">
+                <div class="nav_2-conteneur">
+                    <!--barre de navigation du haut -->
+                    <ul>
+                        <li>
+                            <a id="nav_2-btn1" class="nav_2-btn" href="#">
+                                <svg class="svg-social-media header-svg-social-media1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50 50">
+                                    <path d="M 9 4 C 6.2504839 4 4 6.2504839 4 9 L 4 41 C 4 43.749516 6.2504839 46 9 46 L 25.832031 46 A 1.0001 1.0001 0 0 0 26.158203 46 L 31.832031 46 A 1.0001 1.0001 0 0 0 32.158203 46 L 41 46 C 43.749516 46 46 43.749516 46 41 L 46 9 C 46 6.2504839 43.749516 4 41 4 L 9 4 z M 9 6 L 41 6 C 42.668484 6 44 7.3315161 44 9 L 44 41 C 44 42.668484 42.668484 44 41 44 L 33 44 L 33 30 L 36.820312 30 L 38.220703 23 L 33 23 L 33 21 C 33 20.442508 33.05305 20.398929 33.240234 20.277344 C 33.427419 20.155758 34.005822 20 35 20 L 38 20 L 38 14.369141 L 37.429688 14.097656 C 37.429688 14.097656 35.132647 13 32 13 C 29.75 13 27.901588 13.896453 26.71875 15.375 C 25.535912 16.853547 25 18.833333 25 21 L 25 23 L 22 23 L 22 30 L 25 30 L 25 44 L 9 44 C 7.3315161 44 6 42.668484 6 41 L 6 9 C 6 7.3315161 7.3315161 6 9 6 z M 32 15 C 34.079062 15 35.38736 15.458455 36 15.701172 L 36 18 L 35 18 C 33.849178 18 32.926956 18.0952 32.150391 18.599609 C 31.373826 19.104024 31 20.061492 31 21 L 31 25 L 35.779297 25 L 35.179688 28 L 31 28 L 31 44 L 27 44 L 27 28 L 24 28 L 24 25 L 27 25 L 27 21 C 27 19.166667 27.464088 17.646453 28.28125 16.625 C 29.098412 15.603547 30.25 15 32 15 z"></path>
+                                </svg>
+                            </a>
+                        </li>
+                        <li>
+                            <a id="nav_2-btn2" class="nav_2-btn" href="#">
+                                <svg class="svg-social-media header-svg-social-media2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50 50">
+                                    <path d="M 16 3 C 8.8324839 3 3 8.8324839 3 16 L 3 34 C 3 41.167516 8.8324839 47 16 47 L 34 47 C 41.167516 47 47 41.167516 47 34 L 47 16 C 47 8.8324839 41.167516 3 34 3 L 16 3 z M 16 5 L 34 5 C 40.086484 5 45 9.9135161 45 16 L 45 34 C 45 40.086484 40.086484 45 34 45 L 16 45 C 9.9135161 45 5 40.086484 5 34 L 5 16 C 5 9.9135161 9.9135161 5 16 5 z M 37 11 A 2 2 0 0 0 35 13 A 2 2 0 0 0 37 15 A 2 2 0 0 0 39 13 A 2 2 0 0 0 37 11 z M 25 14 C 18.936712 14 14 18.936712 14 25 C 14 31.063288 18.936712 36 25 36 C 31.063288 36 36 31.063288 36 25 C 36 18.936712 31.063288 14 25 14 z M 25 16 C 29.982407 16 34 20.017593 34 25 C 34 29.982407 29.982407 34 25 34 C 20.017593 34 16 29.982407 16 25 C 16 20.017593 20.017593 16 25 16 z"></path>
+                                </svg>
+                            </a>
+                        </li>
+                        <li>
+                            <a id="nav_2-btn3" class="nav_2-btn" href="#">
+                                <svg class="svg-social-media header-svg-social-media3" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50 50">
+                                    <path d="M 11 4 C 7.1456661 4 4 7.1456661 4 11 L 4 39 C 4 42.854334 7.1456661 46 11 46 L 39 46 C 42.854334 46 46 42.854334 46 39 L 46 11 C 46 7.1456661 42.854334 4 39 4 L 11 4 z M 11 6 L 39 6 C 41.773666 6 44 8.2263339 44 11 L 44 39 C 44 41.773666 41.773666 44 39 44 L 11 44 C 8.2263339 44 6 41.773666 6 39 L 6 11 C 6 8.2263339 8.2263339 6 11 6 z M 13.085938 13 L 22.308594 26.103516 L 13 37 L 15.5 37 L 23.4375 27.707031 L 29.976562 37 L 37.914062 37 L 27.789062 22.613281 L 36 13 L 33.5 13 L 26.660156 21.009766 L 21.023438 13 L 13.085938 13 z M 16.914062 15 L 19.978516 15 L 34.085938 35 L 31.021484 35 L 16.914062 15 z"></path>
+                                </svg>
+                            </a>
+                        </li>
+                        <li>
+                            <a id="nav_2-btn4" class="nav_2-btn" href="#">
+                                <svg class="svg-social-media header-svg-social-media3" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50 50">
+                                    <path d="M 9 4 C 6.2504839 4 4 6.2504839 4 9 L 4 41 C 4 43.749516 6.2504839 46 9 46 L 41 46 C 43.749516 46 46 43.749516 46 41 L 46 9 C 46 6.2504839 43.749516 4 41 4 L 9 4 z M 9 6 L 41 6 C 42.668484 6 44 7.3315161 44 9 L 44 41 C 44 42.668484 42.668484 44 41 44 L 9 44 C 7.3315161 44 6 42.668484 6 41 L 6 9 C 6 7.3315161 7.3315161 6 9 6 z M 14 11.011719 C 12.904779 11.011719 11.919219 11.339079 11.189453 11.953125 C 10.459687 12.567171 10.011719 13.484511 10.011719 14.466797 C 10.011719 16.333977 11.631285 17.789609 13.691406 17.933594 A 0.98809878 0.98809878 0 0 0 13.695312 17.935547 A 0.98809878 0.98809878 0 0 0 14 17.988281 C 16.27301 17.988281 17.988281 16.396083 17.988281 14.466797 A 0.98809878 0.98809878 0 0 0 17.986328 14.414062 C 17.884577 12.513831 16.190443 11.011719 14 11.011719 z M 14 12.988281 C 15.392231 12.988281 15.94197 13.610038 16.001953 14.492188 C 15.989803 15.348434 15.460091 16.011719 14 16.011719 C 12.614594 16.011719 11.988281 15.302225 11.988281 14.466797 C 11.988281 14.049083 12.140703 13.734298 12.460938 13.464844 C 12.78117 13.19539 13.295221 12.988281 14 12.988281 z M 11 19 A 1.0001 1.0001 0 0 0 10 20 L 10 39 A 1.0001 1.0001 0 0 0 11 40 L 17 40 A 1.0001 1.0001 0 0 0 18 39 L 18 33.134766 L 18 20 A 1.0001 1.0001 0 0 0 17 19 L 11 19 z M 20 19 A 1.0001 1.0001 0 0 0 19 20 L 19 39 A 1.0001 1.0001 0 0 0 20 40 L 26 40 A 1.0001 1.0001 0 0 0 27 39 L 27 29 C 27 28.170333 27.226394 27.345035 27.625 26.804688 C 28.023606 26.264339 28.526466 25.940057 29.482422 25.957031 C 30.468166 25.973981 30.989999 26.311669 31.384766 26.841797 C 31.779532 27.371924 32 28.166667 32 29 L 32 39 A 1.0001 1.0001 0 0 0 33 40 L 39 40 A 1.0001 1.0001 0 0 0 40 39 L 40 28.261719 C 40 25.300181 39.122788 22.95433 37.619141 21.367188 C 36.115493 19.780044 34.024172 19 31.8125 19 C 29.710483 19 28.110853 19.704889 27 20.423828 L 27 20 A 1.0001 1.0001 0 0 0 26 19 L 20 19 z M 12 21 L 16 21 L 16 33.134766 L 16 38 L 12 38 L 12 21 z M 21 21 L 25 21 L 25 22.560547 A 1.0001 1.0001 0 0 0 26.798828 23.162109 C 26.798828 23.162109 28.369194 21 31.8125 21 C 33.565828 21 35.069366 21.582581 36.167969 22.742188 C 37.266572 23.901794 38 25.688257 38 28.261719 L 38 38 L 34 38 L 34 29 C 34 27.833333 33.720468 26.627107 32.990234 25.646484 C 32.260001 24.665862 31.031834 23.983076 29.517578 23.957031 C 27.995534 23.930001 26.747519 24.626988 26.015625 25.619141 C 25.283731 26.611293 25 27.829667 25 29 L 25 38 L 21 38 L 21 21 z"></path>
+                                </svg>
+                            </a>
+                        </li>
+                        <!-- === icon de connection ou de souscription ==-->
+                        <li>
+                            <a id="nav_2-btn5" class="btn-se-connect" href="./Connection&Enregistrement.html">
+                                <svg class="svg-icon-user" xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960">
+                                    <path d="M185-80q-17 0-29.5-12.5T143-122v-105q0-90 56-159t144-88q-40 28-62 70.5T259-312v190q0 11 3 22t10 20h-87Zm147 0q-17 0-29.5-12.5T290-122v-190q0-70 49.5-119T459-480h189q70 0 119 49t49 119v64q0 70-49 119T648-80H332Zm148-484q-66 0-112-46t-46-112q0-66 46-112t112-46q66 0 112 46t46 112q0 66-46 112t-112 46Z"/>
+                                </svg>
+                                <span>Se connecter</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <!--=== barre de navigation du bas vers les pages ===-->
+                <div class="nav_3-conteneur">
+                    <ul>
+                        <li><a id="nav_3-btn1" class="nav_3-btn" href="../Index.html">Acceuil</a></li>
+                        <li><a id="nav_3-btn2" class="nav_3-btn page-courrant" href="./Linges.html">Linges</a></li>
+                        <li><a id="nav_3-btn3" class="nav_3-btn" href="./Chaussures.html">Chaussures</a></li>
+                        <li><a id="nav_3-btn4" class="nav_3-btn" href="./Tarifs.html">Tarifs</a></li>
+                        <li><a id="nav_3-btn5" class="nav_3-btn" href="./Produits.html">Produits</a></li>
+                        <li><a id="nav_3-btn6" class="nav_3-btn" href="./AboutUs.html">À Propos</a></li>
+                        <li><a id="nav_3-btn7" class="nav_3-btn" href="./ContactUs.html">Contacte</a></li>
+                    </ul>
+                </div>
+                <div class="nav_4-conteneur">
+                    <!--barre de navigation pour petit media (menu hamburger) -->
+                    <ul>
+                        <li class="nav_4-menu">
+                            <label for="main_6-input">
+                                <svg id="nav_4-menu-hamburger" class="nav_4-btn"
+                                     xmlns="http://www.w3.org/2000/svg"
+                                     viewBox="0 -960 960 960">
+                                    <path  d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/>
+                                </svg>
+                            </label>
+                            <input type="checkbox" name="main_6-input" id="main_6-input">
+                            <ul class="nav_4-sous-menu">
+                                <li><a id="nav_4-btn2" class="nav_4-btn page-courrant" href="./Linges.html">Linges</a></li>
+                                <li><a id="nav_4-btn3" class="nav_4-btn" href="./Chaussures.html">Chaussures</a></li>
+                                <li><a id="nav_4-btn4" class="nav_4-btn" href="./Tarifs.html">Tarifs & Abonnement</a></li>
+                                <li><a id="nav_4-btn5" class="nav_4-btn" href="./Produits.html">Produits</a></li>
+                                <li><a id="nav_4-btn6" class="nav_4-btn" href="./AboutUs.html">À Propos</a></li>
+                                <li><a id="nav_4-btn7" class="nav_4-btn" href="./ContactUs.html">Contacte</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+    </header>
+    
+    <!-- === corps du site === -->
+    <!-- === les deco de arriere-plant === -->
+    <div class="section-deco-principale">
+        <!-- === background avec animation blob === -->
+        <div class="background-section">
+            <div class="conteneur-blob">
+                <div class="ctn-background background-BigBlob-1">
+                    <svg class="svg-background" viewBox="0 0 190 190" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M10 10 C 20 20, 40 20, 50 10">
+                            <animate attributeName="d"
+                                     dur="10s"
+                                     repeatCount="indefinite"
+                                     values="M42.3,-58.2C55.1,-48.9,66,-36.9,72.8,-22.2C79.6,-7.5,82.2,10,77.9,25.9C73.6,41.8,62.3,56.1,48.2,67.9C34.1,79.7,17,89.1,0,89.1C-17,89,-33.9,79.5,-49.7,68.2C-65.4,56.9,-80,43.8,-85.6,27.6C-91.2,11.3,-87.9,-8.1,-79.6,-23.4C-71.2,-38.8,-57.9,-50.1,-43.8,-59.1C-29.7,-68,-14.9,-74.6,-0.1,-74.5C14.7,-74.4,29.5,-67.6,42.3,-58.2Z;
+
+                                     M49.7,-69.7C62,-59.4,68.1,-41.7,71.3,-24.8C74.6,-7.9,75,8.3,71.7,24.7C68.4,41.2,61.2,57.8,48.6,66.3C36.1,74.8,18,75.1,-0.2,75.4C-18.5,75.7,-36.9,76,-51.8,68.2C-66.8,60.5,-78.1,44.8,-84.6,27C-91,9.2,-92.5,-10.7,-85,-25.8C-77.5,-40.8,-61.1,-51.1,-45.4,-60.4C-29.8,-69.7,-14.9,-77.9,1.9,-80.5C18.7,-83.1,37.3,-80.1,49.7,-69.7Z;
+
+                                     M49.9,-68.9C62.5,-59.6,69,-42.1,74.8,-24.3C80.6,-6.5,85.7,11.5,81.5,27.1C77.3,42.7,63.8,56,48.7,67.5C33.5,79.1,16.8,89,-1.4,90.9C-19.5,92.8,-39.1,86.7,-51.8,74.4C-64.5,62,-70.5,43.4,-76.2,25C-81.8,6.5,-87.2,-11.8,-83.5,-28.3C-79.8,-44.9,-67,-59.7,-51.5,-68.1C-36.1,-76.5,-18.1,-78.4,0.3,-78.8C18.7,-79.3,37.4,-78.2,49.9,-68.9Z;
+
+                                     M52.4,-72.7C67.4,-61.2,78.7,-45.2,83.6,-27.8C88.4,-10.3,86.8,8.7,81,26.2C75.1,43.6,64.9,59.5,50.7,71.5C36.5,83.4,18.3,91.4,0.4,90.9C-17.5,90.4,-35,81.3,-50.4,69.7C-65.8,58.1,-79,44.1,-84.6,27.4C-90.2,10.7,-88.1,-8.6,-81.8,-26.2C-75.6,-43.8,-65.2,-59.6,-50.9,-71.3C-36.5,-83,-18.3,-90.6,0.2,-90.9C18.7,-91.2,37.4,-84.2,52.4,-72.7Z;
+
+                                     M49.3,-67.9C63.6,-57.5,74.6,-42.7,80.5,-25.9C86.3,-9.1,86.9,9.7,82.2,27.5C77.5,45.2,67.4,62,52.8,73.8C38.2,85.7,19.1,92.6,-0.2,92.8C-19.4,93.1,-38.9,86.7,-54,75C-69.1,63.3,-79.9,46.4,-84.8,28.2C-89.8,10.1,-88.9,-9.2,-82.6,-26.3C-76.4,-43.4,-64.7,-58.2,-50,-68.4C-35.3,-78.6,-17.7,-84.3,-0.1,-84.2C17.5,-84.1,35.1,-78.3,49.3,-67.9Z;
+
+                                     M42.3,-58.2C55.1,-48.9,66,-36.9,72.8,-22.2C79.6,-7.5,82.2,10,77.9,25.9C73.6,41.8,62.3,56.1,48.2,67.9C34.1,79.7,17,89.1,0,89.1C-17,89,-33.9,79.5,-49.7,68.2C-65.4,56.9,-80,43.8,-85.6,27.6C-91.2,11.3,-87.9,-8.1,-79.6,-23.4C-71.2,-38.8,-57.9,-50.1,-43.8,-59.1C-29.7,-68,-14.9,-74.6,-0.1,-74.5C14.7,-74.4,29.5,-67.6,42.3,-58.2Z">
+                            </animate>
+                        </path>
+                    </svg>
+                </div>
+                <div class="ctn-background background-BigBlob-2">
+                    <svg class="svg-background" viewBox="0 0 190 190" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M10 10 C 20 20, 40 20, 50 10">
+                            <animate attributeName="d"
+                                     dur="10s"
+                                     repeatCount="indefinite"
+                                     values="M42.3,-58.2C55.1,-48.9,66,-36.9,72.8,-22.2C79.6,-7.5,82.2,10,77.9,25.9C73.6,41.8,62.3,56.1,48.2,67.9C34.1,79.7,17,89.1,0,89.1C-17,89,-33.9,79.5,-49.7,68.2C-65.4,56.9,-80,43.8,-85.6,27.6C-91.2,11.3,-87.9,-8.1,-79.6,-23.4C-71.2,-38.8,-57.9,-50.1,-43.8,-59.1C-29.7,-68,-14.9,-74.6,-0.1,-74.5C14.7,-74.4,29.5,-67.6,42.3,-58.2Z;
+
+                                     M49.7,-69.7C62,-59.4,68.1,-41.7,71.3,-24.8C74.6,-7.9,75,8.3,71.7,24.7C68.4,41.2,61.2,57.8,48.6,66.3C36.1,74.8,18,75.1,-0.2,75.4C-18.5,75.7,-36.9,76,-51.8,68.2C-66.8,60.5,-78.1,44.8,-84.6,27C-91,9.2,-92.5,-10.7,-85,-25.8C-77.5,-40.8,-61.1,-51.1,-45.4,-60.4C-29.8,-69.7,-14.9,-77.9,1.9,-80.5C18.7,-83.1,37.3,-80.1,49.7,-69.7Z;
+
+                                     M49.9,-68.9C62.5,-59.6,69,-42.1,74.8,-24.3C80.6,-6.5,85.7,11.5,81.5,27.1C77.3,42.7,63.8,56,48.7,67.5C33.5,79.1,16.8,89,-1.4,90.9C-19.5,92.8,-39.1,86.7,-51.8,74.4C-64.5,62,-70.5,43.4,-76.2,25C-81.8,6.5,-87.2,-11.8,-83.5,-28.3C-79.8,-44.9,-67,-59.7,-51.5,-68.1C-36.1,-76.5,-18.1,-78.4,0.3,-78.8C18.7,-79.3,37.4,-78.2,49.9,-68.9Z;
+
+                                     M52.4,-72.7C67.4,-61.2,78.7,-45.2,83.6,-27.8C88.4,-10.3,86.8,8.7,81,26.2C75.1,43.6,64.9,59.5,50.7,71.5C36.5,83.4,18.3,91.4,0.4,90.9C-17.5,90.4,-35,81.3,-50.4,69.7C-65.8,58.1,-79,44.1,-84.6,27.4C-90.2,10.7,-88.1,-8.6,-81.8,-26.2C-75.6,-43.8,-65.2,-59.6,-50.9,-71.3C-36.5,-83,-18.3,-90.6,0.2,-90.9C18.7,-91.2,37.4,-84.2,52.4,-72.7Z;
+
+                                     M49.3,-67.9C63.6,-57.5,74.6,-42.7,80.5,-25.9C86.3,-9.1,86.9,9.7,82.2,27.5C77.5,45.2,67.4,62,52.8,73.8C38.2,85.7,19.1,92.6,-0.2,92.8C-19.4,93.1,-38.9,86.7,-54,75C-69.1,63.3,-79.9,46.4,-84.8,28.2C-89.8,10.1,-88.9,-9.2,-82.6,-26.3C-76.4,-43.4,-64.7,-58.2,-50,-68.4C-35.3,-78.6,-17.7,-84.3,-0.1,-84.2C17.5,-84.1,35.1,-78.3,49.3,-67.9Z;
+
+                                     M42.3,-58.2C55.1,-48.9,66,-36.9,72.8,-22.2C79.6,-7.5,82.2,10,77.9,25.9C73.6,41.8,62.3,56.1,48.2,67.9C34.1,79.7,17,89.1,0,89.1C-17,89,-33.9,79.5,-49.7,68.2C-65.4,56.9,-80,43.8,-85.6,27.6C-91.2,11.3,-87.9,-8.1,-79.6,-23.4C-71.2,-38.8,-57.9,-50.1,-43.8,-59.1C-29.7,-68,-14.9,-74.6,-0.1,-74.5C14.7,-74.4,29.5,-67.6,42.3,-58.2Z">
+                            </animate>
+                        </path>
+                    </svg>
+                </div>
+                <div class="ctn-background background-petit-1">
+                    <svg class="svg-background" viewBox="0 0 170 170" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M10 10 C 20 20, 40 20, 50 10">
+                            <animate attributeName="d"
+                                     dur="10s"
+                                     repeatCount="indefinite"
+                                     values="M60.9,-58.3C77.4,-44.4,88.3,-22.2,88.5,0.3C88.8,22.7,78.4,45.4,61.9,60.7C45.4,76,22.7,83.8,3.9,79.9C-14.9,76,-29.7,60.3,-43.9,45C-58.1,29.7,-71.6,14.9,-73.9,-2.3C-76.2,-19.5,-67.3,-39,-53.2,-52.9C-39,-66.9,-19.5,-75.3,1.3,-76.7C22.2,-78,44.4,-72.3,60.9,-58.3Z;
+
+                                                M50.7,-49.9C62.5,-38.9,66.7,-19.5,65,-1.7C63.3,16,55.6,32,43.8,47.2C32,62.4,16,76.8,-3.5,80.3C-23,83.9,-46.1,76.5,-61.7,61.3C-77.3,46.1,-85.4,23,-83.9,1.5C-82.5,-20.1,-71.4,-40.2,-55.8,-51.2C-40.2,-62.1,-20.1,-63.9,-0.3,-63.6C19.5,-63.2,38.9,-60.8,50.7,-49.9Z;
+
+                                                M46.5,-43C62.8,-30.1,80.5,-15.1,82.6,2.1C84.7,19.3,71.2,38.5,54.9,52.1C38.5,65.7,19.3,73.5,-1.7,75.3C-22.7,77,-45.4,72.6,-60.7,59C-76,45.4,-83.9,22.7,-80.5,3.4C-77.1,-16,-62.5,-31.9,-47.2,-44.8C-31.9,-57.7,-16,-67.5,-0.5,-67C15.1,-66.6,30.1,-55.9,46.5,-43Z;
+
+                                                M44.2,-47.9C55.1,-33.2,60.4,-16.6,63.7,3.2C66.9,23.1,68.1,46.2,57.1,62C46.2,77.7,23.1,86.2,0.3,85.9C-22.6,85.7,-45.2,76.7,-57.8,61C-70.5,45.2,-73.2,22.6,-73.5,-0.4C-73.9,-23.4,-72,-46.7,-59.3,-61.3C-46.7,-76,-23.4,-81.9,-3.4,-78.5C16.6,-75.2,33.2,-62.5,44.2,-47.9Z;
+
+                                                M60.9,-58.3C77.4,-44.4,88.3,-22.2,88.5,0.3C88.8,22.7,78.4,45.4,61.9,60.7C45.4,76,22.7,83.8,3.9,79.9C-14.9,76,-29.7,60.3,-43.9,45C-58.1,29.7,-71.6,14.9,-73.9,-2.3C-76.2,-19.5,-67.3,-39,-53.2,-52.9C-39,-66.9,-19.5,-75.3,1.3,-76.7C22.2,-78,44.4,-72.3,60.9,-58.3Z">
+                            </animate>
+                        </path>
+                    </svg>
+                </div>
+                <div class="ctn-background background-petit-2">
+                    <svg class="svg-background" viewBox="0 0 190 190" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M10 10 C 20 20, 40 20, 50 10" >
+                            <animate attributeName="d"
+                                     dur="10s"
+                                     repeatCount="indefinite"
+                                     values="M60.9,-58.3C77.4,-44.4,88.3,-22.2,88.5,0.3C88.8,22.7,78.4,45.4,61.9,60.7C45.4,76,22.7,83.8,3.9,79.9C-14.9,76,-29.7,60.3,-43.9,45C-58.1,29.7,-71.6,14.9,-73.9,-2.3C-76.2,-19.5,-67.3,-39,-53.2,-52.9C-39,-66.9,-19.5,-75.3,1.3,-76.7C22.2,-78,44.4,-72.3,60.9,-58.3Z;
+
+                                                M50.7,-49.9C62.5,-38.9,66.7,-19.5,65,-1.7C63.3,16,55.6,32,43.8,47.2C32,62.4,16,76.8,-3.5,80.3C-23,83.9,-46.1,76.5,-61.7,61.3C-77.3,46.1,-85.4,23,-83.9,1.5C-82.5,-20.1,-71.4,-40.2,-55.8,-51.2C-40.2,-62.1,-20.1,-63.9,-0.3,-63.6C19.5,-63.2,38.9,-60.8,50.7,-49.9Z;
+
+                                                M46.5,-43C62.8,-30.1,80.5,-15.1,82.6,2.1C84.7,19.3,71.2,38.5,54.9,52.1C38.5,65.7,19.3,73.5,-1.7,75.3C-22.7,77,-45.4,72.6,-60.7,59C-76,45.4,-83.9,22.7,-80.5,3.4C-77.1,-16,-62.5,-31.9,-47.2,-44.8C-31.9,-57.7,-16,-67.5,-0.5,-67C15.1,-66.6,30.1,-55.9,46.5,-43Z;
+
+                                                M44.2,-47.9C55.1,-33.2,60.4,-16.6,63.7,3.2C66.9,23.1,68.1,46.2,57.1,62C46.2,77.7,23.1,86.2,0.3,85.9C-22.6,85.7,-45.2,76.7,-57.8,61C-70.5,45.2,-73.2,22.6,-73.5,-0.4C-73.9,-23.4,-72,-46.7,-59.3,-61.3C-46.7,-76,-23.4,-81.9,-3.4,-78.5C16.6,-75.2,33.2,-62.5,44.2,-47.9Z;
+
+                                                M60.9,-58.3C77.4,-44.4,88.3,-22.2,88.5,0.3C88.8,22.7,78.4,45.4,61.9,60.7C45.4,76,22.7,83.8,3.9,79.9C-14.9,76,-29.7,60.3,-43.9,45C-58.1,29.7,-71.6,14.9,-73.9,-2.3C-76.2,-19.5,-67.3,-39,-53.2,-52.9C-39,-66.9,-19.5,-75.3,1.3,-76.7C22.2,-78,44.4,-72.3,60.9,-58.3Z">
+                            </animate>
+                        </path>
+                    </svg>
+                </div>
+                <div class="ctn-background background-petit-3">
+                    <svg class="svg-background" viewBox="0 0 190 190" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M10 10 C 20 20, 40 20, 50 10">
+                            <animate attributeName="d"
+                                     dur="10s"
+                                     repeatCount="indefinite"
+                                     values="M60.9,-58.3C77.4,-44.4,88.3,-22.2,88.5,0.3C88.8,22.7,78.4,45.4,61.9,60.7C45.4,76,22.7,83.8,3.9,79.9C-14.9,76,-29.7,60.3,-43.9,45C-58.1,29.7,-71.6,14.9,-73.9,-2.3C-76.2,-19.5,-67.3,-39,-53.2,-52.9C-39,-66.9,-19.5,-75.3,1.3,-76.7C22.2,-78,44.4,-72.3,60.9,-58.3Z;
+
+                                                M50.7,-49.9C62.5,-38.9,66.7,-19.5,65,-1.7C63.3,16,55.6,32,43.8,47.2C32,62.4,16,76.8,-3.5,80.3C-23,83.9,-46.1,76.5,-61.7,61.3C-77.3,46.1,-85.4,23,-83.9,1.5C-82.5,-20.1,-71.4,-40.2,-55.8,-51.2C-40.2,-62.1,-20.1,-63.9,-0.3,-63.6C19.5,-63.2,38.9,-60.8,50.7,-49.9Z;
+
+                                                M46.5,-43C62.8,-30.1,80.5,-15.1,82.6,2.1C84.7,19.3,71.2,38.5,54.9,52.1C38.5,65.7,19.3,73.5,-1.7,75.3C-22.7,77,-45.4,72.6,-60.7,59C-76,45.4,-83.9,22.7,-80.5,3.4C-77.1,-16,-62.5,-31.9,-47.2,-44.8C-31.9,-57.7,-16,-67.5,-0.5,-67C15.1,-66.6,30.1,-55.9,46.5,-43Z;
+
+                                                M44.2,-47.9C55.1,-33.2,60.4,-16.6,63.7,3.2C66.9,23.1,68.1,46.2,57.1,62C46.2,77.7,23.1,86.2,0.3,85.9C-22.6,85.7,-45.2,76.7,-57.8,61C-70.5,45.2,-73.2,22.6,-73.5,-0.4C-73.9,-23.4,-72,-46.7,-59.3,-61.3C-46.7,-76,-23.4,-81.9,-3.4,-78.5C16.6,-75.2,33.2,-62.5,44.2,-47.9Z;
+
+                                                M60.9,-58.3C77.4,-44.4,88.3,-22.2,88.5,0.3C88.8,22.7,78.4,45.4,61.9,60.7C45.4,76,22.7,83.8,3.9,79.9C-14.9,76,-29.7,60.3,-43.9,45C-58.1,29.7,-71.6,14.9,-73.9,-2.3C-76.2,-19.5,-67.3,-39,-53.2,-52.9C-39,-66.9,-19.5,-75.3,1.3,-76.7C22.2,-78,44.4,-72.3,60.9,-58.3Z">
+                            </animate>
+                        </path>
+                    </svg>
+                </div>
+                <div class="ctn-background background-petit-4">
+                    <svg class="svg-background" viewBox="0 0 190 190" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M10 10 C 20 20, 40 20, 50 10">
+                            <animate attributeName="d"
+                                     dur="10s"
+                                     repeatCount="indefinite"
+                                     values="M60.9,-58.3C77.4,-44.4,88.3,-22.2,88.5,0.3C88.8,22.7,78.4,45.4,61.9,60.7C45.4,76,22.7,83.8,3.9,79.9C-14.9,76,-29.7,60.3,-43.9,45C-58.1,29.7,-71.6,14.9,-73.9,-2.3C-76.2,-19.5,-67.3,-39,-53.2,-52.9C-39,-66.9,-19.5,-75.3,1.3,-76.7C22.2,-78,44.4,-72.3,60.9,-58.3Z;
+
+                                                M50.7,-49.9C62.5,-38.9,66.7,-19.5,65,-1.7C63.3,16,55.6,32,43.8,47.2C32,62.4,16,76.8,-3.5,80.3C-23,83.9,-46.1,76.5,-61.7,61.3C-77.3,46.1,-85.4,23,-83.9,1.5C-82.5,-20.1,-71.4,-40.2,-55.8,-51.2C-40.2,-62.1,-20.1,-63.9,-0.3,-63.6C19.5,-63.2,38.9,-60.8,50.7,-49.9Z;
+
+                                                M46.5,-43C62.8,-30.1,80.5,-15.1,82.6,2.1C84.7,19.3,71.2,38.5,54.9,52.1C38.5,65.7,19.3,73.5,-1.7,75.3C-22.7,77,-45.4,72.6,-60.7,59C-76,45.4,-83.9,22.7,-80.5,3.4C-77.1,-16,-62.5,-31.9,-47.2,-44.8C-31.9,-57.7,-16,-67.5,-0.5,-67C15.1,-66.6,30.1,-55.9,46.5,-43Z;
+
+                                                M44.2,-47.9C55.1,-33.2,60.4,-16.6,63.7,3.2C66.9,23.1,68.1,46.2,57.1,62C46.2,77.7,23.1,86.2,0.3,85.9C-22.6,85.7,-45.2,76.7,-57.8,61C-70.5,45.2,-73.2,22.6,-73.5,-0.4C-73.9,-23.4,-72,-46.7,-59.3,-61.3C-46.7,-76,-23.4,-81.9,-3.4,-78.5C16.6,-75.2,33.2,-62.5,44.2,-47.9Z;
+
+                                                M60.9,-58.3C77.4,-44.4,88.3,-22.2,88.5,0.3C88.8,22.7,78.4,45.4,61.9,60.7C45.4,76,22.7,83.8,3.9,79.9C-14.9,76,-29.7,60.3,-43.9,45C-58.1,29.7,-71.6,14.9,-73.9,-2.3C-76.2,-19.5,-67.3,-39,-53.2,-52.9C-39,-66.9,-19.5,-75.3,1.3,-76.7C22.2,-78,44.4,-72.3,60.9,-58.3Z">
+                            </animate>
+                        </path>
+                    </svg>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- === Banniere === -->
+    <section class="section-banniere">
+        <div class="conteneur container-titre">
+            <div class="titre-deco"></div>
+            <div class="ctn-titre-pricinpale">
+                <h2 class="titre-pricinpale">NETTOYAGE LINGES</h2>
+
+                <div class="nav-relative">
+                    <a class="nav-relative-1" href="../Index.html">Acceuil</a>
+                    <svg class="nav-relative-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960">
+                        <path d="M400-80 0-480l400-400 71 71-329 329 329 329-71 71Z"/>
+                    </svg>
+                    <svg class="nav-relative-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960">
+                        <path d="M400-80 0-480l400-400 71 71-329 329 329 329-71 71Z"/>
+                    </svg>
+                    <span class="nav-relative-2">Linges</span>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- === Presentation des linges === -->
+    <section class="section-presentation">
+        <div class="conteneur ctn-presentation">
+            <div class="fiche-titre ctn-text">
+                <h2 class="titre-fiche titre-presentation">
+                    Votre linge propre. Livré ou et quand vous voulez.
+                </h2>
+                <p class="text-fiche text-presentation">
+                    Blanchisserie Industruelle collecte à fois à domicile et
+                    dans les dépots situés en entreprise, dans les
+                    immeubles de bureaux, en résidentiel, etc.
+                </p>
+                <a class="btn btn-presentation-commande" href="./Tarifs.html">Lancer une commande</a>
+            </div>
+        </div>
+    </section>
+    <!-- === les types de linge === -->
+    <section class="section-Types">
+        <div class="conteneur conteneur-vetements">
+            <div class="section-titre titre-vetements">
+                <h2>Les Tenues...</h2>
+            </div>
+            <div class="section-items conteneur-vetements-items">
+                <div class="ctn ctn-hauts">
+                    <div class="vetements-img ctn-hauts-images">
+                        <img src="../Assets/Images/Linges/hauts.jpg" alt="images des hauts">
+                    </div>
+                    <div class="vetements-text ctn-hauts-text">
+                        <div class="text_data ctn-hauts-text-data">
+                            <h3 class="vet-titre hauts-titre">Les hauts</h3>
+                            <p class="vet-texte hauts-texte">
+                                Confiez-nous vos chemises,
+                                t-shirts et blouses pour un nettoyage impeccable. <br>
+                                Nous prenons soin de vos vêtements pour qu'ils restent
+                                frais et comme neufs.
+                            </p>
+                            <ul class="vet-liste hauts-liste">
+                                <li>
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960">
+                                        <path d="M382-240 154-468l57-57 171 171 367-367 57 57-424 424Z"/>
+                                    </svg>
+                                    <span>Les chemises</span>
+                                </li>
+                                <li>
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960">
+                                        <path d="M382-240 154-468l57-57 171 171 367-367 57 57-424 424Z"/>
+                                    </svg>
+                                    <span>Les t-shirts</span>
+                                </li>
+                                <li>
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960">
+                                        <path d="M382-240 154-468l57-57 171 171 367-367 57 57-424 424Z"/>
+                                    </svg>
+                                    <span>Les pulls</span>
+                                </li>
+                                <li>
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960">
+                                        <path d="M382-240 154-468l57-57 171 171 367-367 57 57-424 424Z"/>
+                                    </svg>
+                                    <span>Les blouses</span>
+                                </li>
+                                <li>
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960">
+                                        <path d="M382-240 154-468l57-57 171 171 367-367 57 57-424 424Z"/>
+                                    </svg>
+                                    <span>Les vestes</span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="ctn ctn-bas">
+                    <div class="vetements-text ctn-bas-text">
+                        <div class="text_data ctn-bas-text-data">
+                            <h3 class="vet-titre bas-titre">Les bas</h3>
+                            <p class="vet-texte bas-texte">
+                                Nos services de blanchisserie garantissent un soin optimal pour vos pantalons,
+                                jupes et jeans.<br>
+                                Profitez de vêtements toujours prets, propres et bien entretenus.
+                            </p>
+                            <ul class="vet-liste bas-liste">
+                                <li>
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960">
+                                        <path d="M382-240 154-468l57-57 171 171 367-367 57 57-424 424Z"/>
+                                    </svg>
+                                    <span>Les pantalons</span></li>
+                                <li>
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960">
+                                        <path d="M382-240 154-468l57-57 171 171 367-367 57 57-424 424Z"/>
+                                    </svg>
+                                    <span>Les jupes</span></li>
+                                <li>
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960">
+                                        <path d="M382-240 154-468l57-57 171 171 367-367 57 57-424 424Z"/>
+                                    </svg>
+                                    <span>Les shorts</span></li>
+                                <li>
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960">
+                                        <path d="M382-240 154-468l57-57 171 171 367-367 57 57-424 424Z"/>
+                                    </svg>
+                                    <span>Les jeans</span></li>
+                                <li>
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960">
+                                        <path d="M382-240 154-468l57-57 171 171 367-367 57 57-424 424Z"/>
+                                    </svg>
+                                    <span>Les leggings</span></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="vetements-img ctn-bas-images">
+                        <img src="../Assets/Images/Linges/repassage-jeans-scaled.jpg" alt="images des bas">
+                    </div>
+                </div>
+                <div class="ctn ctn-costumes">
+                    <div class="vetements-img ctn-costumes-images">
+                        <img src="../Assets/Images/Linges/Costumes.jpg" alt="images des costumes">
+                    </div>
+                    <div class="vetements-text ctn-costumes-text">
+                        <div class="text_data ctn-costumes-text-data">
+                            <h3 class="vet-titre costumes-titre">Les Costumes</h3>
+                            <p class="vet-texte costumes-texte">
+                                Pour vos costumes de ville, traditionnelles ou de mariage,
+                                notre blanchisserie offre un nettoyage professionnel et minutieux.<br>
+                                Vos costumes seront toujours impeccables.
+                            </p>
+                            <ul class="vet-liste costumes-liste">
+                                <li>
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960">
+                                        <path d="M382-240 154-468l57-57 171 171 367-367 57 57-424 424Z"/>
+                                    </svg>
+                                    <span>Les tenues de ville</span>
+                                </li>
+                                <li>
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960">
+                                        <path d="M382-240 154-468l57-57 171 171 367-367 57 57-424 424Z"/>
+                                    </svg>
+                                    <span>Les tenues traditionnelles</span>
+                                </li>
+                                <li>
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960">
+                                        <path d="M382-240 154-468l57-57 171 171 367-367 57 57-424 424Z"/>
+                                    </svg>
+                                    <span>Les tenues de spectacle</span>
+                                </li>
+                                <li>
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960">
+                                        <path d="M382-240 154-468l57-57 171 171 367-367 57 57-424 424Z"/>
+                                    </svg>
+                                    <span>Les Basins</span>
+                                </li>
+                                <li>
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960">
+                                        <path d="M382-240 154-468l57-57 171 171 367-367 57 57-424 424Z"/>
+                                    </svg>
+                                    <span>Les tenues de mariage</span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="ctn ctn-accessoires">
+                    <div class="vetements-text ctn-accessoires-text">
+                        <div class="text_data ctn-accessoires-text-data">
+                            <h3 class="vet-titre accessoires-titre">Les Accessoires</h3>
+                            <p class="vet-texte accessoires-texte">
+                                Nous prenons également soin de vos accessoires. <br>
+                                Des cravates aux sacs,
+                                chaque pièce est traitée avec le plus grand soin pour un résultat parfait.
+                            </p>
+                            <ul class="vet-liste accessoires-liste">
+                                <li>
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960">
+                                        <path d="M382-240 154-468l57-57 171 171 367-367 57 57-424 424Z"/>
+                                    </svg>
+                                    <span>Les Cravates</span>
+                                </li>
+                                <li>
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960">
+                                        <path d="M382-240 154-468l57-57 171 171 367-367 57 57-424 424Z"/>
+                                    </svg>
+                                    <span>Les Sacs</span>
+                                </li>
+                                <li>
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960">
+                                        <path d="M382-240 154-468l57-57 171 171 367-367 57 57-424 424Z"/>
+                                    </svg>
+                                    <span>Les Chaussettes</span>
+                                </li>
+                                <li>
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960">
+                                        <path d="M382-240 154-468l57-57 171 171 367-367 57 57-424 424Z"/>
+                                    </svg>
+                                    <span>Les Couvres-chefs</span>
+                                </li>
+                                <li>
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960">
+                                        <path d="M382-240 154-468l57-57 171 171 367-367 57 57-424 424Z"/>
+                                    </svg>
+                                    <span>Les Mouchoirs</span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="vetements-img ctn-accessoires-images">
+                        <img src="../Assets/Images/Linges/chapeaux.jpg" alt="images des accessoires">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="conteneur conteneur-home">
+            <div class="section-titre titre-home">
+                <h2>Articles de menage…</h2>
+            </div>
+            <div class="section-items conteneur-home-items">
+                <div class="ctn ctn-nappes-draps">
+                    <div class="vetements-text ctn-nappes-draps-text">
+                        <div class="text_data ctn-nappes-draps-text-data">
+                            <h3 class="draps-titre">
+                                <span>Les Draps & Houses</span>
+                            </h3>
+                            <p class="vet-texte draps-texte">
+                                Offrez à vos draps et housses un entretien expert pour une sensation de douceur et de propreté irréprochable.
+                                <br><br>Grâce à un nettoyage en profondeur et des soins adaptés, vos textiles conservent leur éclat et leur confort,
+                                pour des nuits agréables et reposantes.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="Img_nappes-draps img-home">
+                        <img src="#" alt="images des nappes-draps">
+                    </div>
+                </div>
+                <div class="ctn ctn-textiles-decoratifs">
+                    <div class="vetements-text textiles-deco-text">
+                        <div class="text_data textiles-deco-text-data">
+                            <h3 class="textiles-deco-titre">
+                                <span>Rideaux & Decorations</span>
+                            </h3>
+                            <p class="vet-texte textiles-deco-texte">
+                                Sublimez votre espace avec des rideaux et éléments décoratifs toujours impeccables.
+                                <br><br>Grâce à un entretien expert, nous éliminons poussières et impuretés pour préserver la beauté de vos tissus et accessoires.
+                                <br>Profitez d’un intérieur raffiné et d’une ambiance chaleureuse au quotidien !
+                            </p>
+                        </div>
+                    </div>
+                    <div class="Img_textiles-deco img-home">
+                        <img src="#" alt="images des textiles de decoratifs">
+                    </div>
+                </div>
+                <div class="ctn ctn-specialisés">
+                    <div class="vetements-text specialisés-text">
+                        <div class="text_data specialisés-text-data">
+                            <h3 class="specialisés-titre">
+                                <span>Les Tenues speciales</span>
+                            </h3>
+                            <p class="vet-texte specialisés-texte">
+                                Confiez vos tenues les plus précieuses à des experts du soin textile.
+                                <br><br>Que ce soit un <em>costume de parades</em>, <em>cosplays</em> ou des <em>vêtements traditionnels</em> ,
+                                nous assurons un entretien minutieux pour préserver leur éclat, leur texture et leur élégance.
+                                <br><br>Parce que chaque occasion mérite des vêtements impeccables !
+                            </p>
+                        </div>
+                    </div>
+                    <div class="Img_specialisés img-home">
+                        <img src="#" alt="images des specialisés">
+                    </div>
+                </div>
+                <div class="ctn ctn-industriel">
+                    <div class="vetements-text industriel-text">
+                        <div class="text_data industriel-text-data">
+                            <h3 class="industriel-titre">
+                                <span>Les Tenues industrielles</span>
+                            </h3>
+                            <p class="vet-texte industriel-texte">
+                                Vos vêtements de travail méritent un soin adapté pour garantir leur longévité et leur efficacité.
+                                <br><br>Grâce à notre nettoyage spécial et des traitements adaptés, nous éliminons les résidus, les taches et les impuretés
+                                pour préserver la qualité et le confort de vos tenues industrielles. Un <em>entretien sur mesure</em> pour une performance optimale !
+                            </p>
+                        </div>
+                    </div>
+                    <div class="Img_industriel img-home">
+                        <img src="#" alt="images des tenues l'industrielles">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- === les techniques utilisées === -->
+    <section class="section-techniques">
+        <div class="conteneur ctn-tech-nettoyage">
+            <div class="fiche-titre text-techniques">
+                <h2 class="titre-fiche">
+                    Économique et écologique. Attentif à la delicatesse de votre linge.
+                </h2>
+                <p class="text-fiche">
+                    Optez pour un nettoyage respectueux de l’environnement tout en préservant la qualité de vos textiles.
+                    Nos méthodes économes en eau et en énergie garantissent un entretien efficace tout en réduisant l’impact écologique.
+                </p>
+            </div>
+            <div class="ctn-video ctn-video-linges">
+                <video class="video video_linges" >
+                    <source src="../Assets/Video/Blanchisserie-Linges-light.mp4" type="video/mp4">
+                </video>
+                <div class="ctn-play-pause ctn-play-pause-linges">
+                    <button class="btn-play-vod btn-play-pause-vod-linges">play</button>
+                    <!--<button class="btn-pause-vod-linges">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960">
+                            <path d="M520-200v-560h240v560H520Zm-320 0v-560h240v560H200Zm400-80h80v-400h-80v400Zm-320 0h80v-400h-80v400Zm0-400v400-400Zm320 0v400-400Z"/>
+                        </svg>
+                    </button> -->
+                </div>
+                <div class="ctn-footer-video ctn-footer-video-linges">
+                    <p class="desc-video desc-video-linges">
+                        description de la <br>
+                        <span>
+                        video
+                    </span>
+                    </p>
+                    <div class="ctn-volume-progress">
+                        <button class="btn btn-vod-stop btn-stop-vod-linges">Stop</button>
+                        <progress class="vod-progress-bar progress-bar-vod-linges" max="100" value="0"></progress>
+                        <label for="volume-vod-linges"></label>
+                        <input id="volume-vod-linges" class="vod-volume volume-vod-linges" type="range" min="0" max="1" step="0.05" value="1" >
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- === calculateur et appel à enlevement à domicile === -->
+    <section class="section-calc">
+        <div class="conteneur conteneur-titre-calc">
+            <h2 class="titre-fiche titre-calc">Faite une simulation ici</h2>
+            <p class="texte-fiche text-simulation">
+                Découvrez en quelques clics les options qui correspondent le mieux à vos besoins.<br>
+                Simulez votre choix et obtenez une estimation rapide pour un service parfaitement adapté à vos attentes.
+            </p>
+            <p class="texte-fiche texte-attention">
+                <strong>Attention :</strong>
+                Veuillez vérifier toutes les informations avant de valider
+                votre simulation afin d'assurer un résultat précis.
+            </p>
+        </div>
+    </section>
+    <!-- === pieds du site === -->
+    <footer>
+        <!-- === background design : vague === -->
+        <div class="conteneur footer-background "></div>
+        <!-- === pieds du site : top === -->
+        <div class="conteneur footer-information">
+            <a href="../Index.html" class="footer-information-logo-1">
+                <img class="logo" src="../Assets/Images/Logo/Mes%20Logo/Immaculat_I.webp" alt="logo-footer">
+            </a>
+            <div class="footer-desc">
+                <p>
+                    ©Blanchisserie Ind. 2025 <br>
+                    Avec expertise, passion, propreté,
+                    fraîcheur et durabilité au
+                    rendez-vous pour un style impeccable en toute occasion.
+                </p>
+                <div class="footer-social-media-ctn">
+                    <a href="#" class="footer-social-media footer-social-media-1">
+                        <svg class="svg-social-media footer-svg-social-media-1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50 50">
+                            <path d="M41,4H9C6.24,4,4,6.24,4,9v32c0,2.76,2.24,5,5,5h32c2.76,0,5-2.24,5-5V9C46,6.24,43.76,4,41,4z M37,19h-2c-2.14,0-3,0.5-3,2 v3h5l-1,5h-4v15h-5V29h-4v-5h4v-3c0-4,2-7,6-7c2.9,0,4,1,4,1V19z"></path>
+                        </svg>
+                    </a>
+                    <a href="#" class="footer-social-media footer-social-media-2">
+                        <svg class="svg-social-media footer-svg-social-media-2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50 50">
+                            <path d="M 16 3 C 8.83 3 3 8.83 3 16 L 3 34 C 3 41.17 8.83 47 16 47 L 34 47 C 41.17 47 47 41.17 47 34 L 47 16 C 47 8.83 41.17 3 34 3 L 16 3 z M 37 11 C 38.1 11 39 11.9 39 13 C 39 14.1 38.1 15 37 15 C 35.9 15 35 14.1 35 13 C 35 11.9 35.9 11 37 11 z M 25 14 C 31.07 14 36 18.93 36 25 C 36 31.07 31.07 36 25 36 C 18.93 36 14 31.07 14 25 C 14 18.93 18.93 14 25 14 z M 25 16 C 20.04 16 16 20.04 16 25 C 16 29.96 20.04 34 25 34 C 29.96 34 34 29.96 34 25 C 34 20.04 29.96 16 25 16 z"></path>
+                        </svg>
+                    </a>
+                    <a href="#" class="footer-social-media footer-social-media-3">
+                        <svg class="svg-social-media footer-svg-social-media-2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50 50">
+                            <path d="M 11 4 C 7.134 4 4 7.134 4 11 L 4 39 C 4 42.866 7.134 46 11 46 L 39 46 C 42.866 46 46 42.866 46 39 L 46 11 C 46 7.134 42.866 4 39 4 L 11 4 z M 13.085938 13 L 21.023438 13 L 26.660156 21.009766 L 33.5 13 L 36 13 L 27.789062 22.613281 L 37.914062 37 L 29.978516 37 L 23.4375 27.707031 L 15.5 37 L 13 37 L 22.308594 26.103516 L 13.085938 13 z M 16.914062 15 L 31.021484 35 L 34.085938 35 L 19.978516 15 L 16.914062 15 z"></path>
+                        </svg>
+                    </a>
+                    <a href="#" class="footer-social-media footer-social-media-4">
+                        <svg class="svg-social-media footer-svg-social-media-2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50 50">
+                            <path d="M41,4H9C6.24,4,4,6.24,4,9v32c0,2.76,2.24,5,5,5h32c2.76,0,5-2.24,5-5V9C46,6.24,43.76,4,41,4z M17,20v19h-6V20H17z M11,14.47c0-1.4,1.2-2.47,3-2.47s2.93,1.07,3,2.47c0,1.4-1.12,2.53-3,2.53C12.2,17,11,15.87,11,14.47z M39,39h-6c0,0,0-9.26,0-10 c0-2-1-4-3.5-4.04h-0.08C27,24.96,26,27.02,26,29c0,0.91,0,10,0,10h-6V20h6v2.56c0,0,1.93-2.56,5.81-2.56 c3.97,0,7.19,2.73,7.19,8.26V39z"></path>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <!-- === pieds du site : bottom === -->
+        <div class="conteneur footer">
+            <div class="footer-conteneur">
+                <!-- === Coodonnées === -->
+                <div class="contenu-footer">
+                <h2 class="titre-footer titre-footer-nous">
+                    Nous
+                </h2>
+                <div class="infos">
+                    <p class="footer-gsm">
+                        <svg class="footer-img-gsm svg-footer-info" xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960" >
+                            <path d="M280-40q-33 0-56.5-23.5T200-120v-720q0-33 23.5-56.5T280-920h400q33 0 56.5 23.5T760-840v720q0 33-23.5 56.5T680-40H280Zm0-120v40h400v-40H280Zm0-80h400v-480H280v480Zm0-560h400v-40H280v40Zm0 0v-40 40Zm0 640v40-40Z"/>
+                        </svg>
+                        <span id="gsm">+32 (0) 4 51 51 51 51</span>
+                    </p>
+                    <p class="footer-telephone">
+                        <svg class="footer-img-tel svg-footer-info" xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960">
+                            <path d="M798-120q-125 0-247-54.5T329-329Q229-429 174.5-551T120-798q0-18
+                                12-30t30-12h162q14 0 25 9.5t13 22.5l26 140q2 16-1 27t-11 19l-97 98q20 37 47.5
+                                71.5T387-386q31 31 65 57.5t72 48.5l94-94q9-9 23.5-13.5T670-390l138 28q14 4 23 14.5t9
+                                23.5v162q0 18-12 30t-30 12ZM241-600l66-66-17-94h-89q5 41 14 81t26 79Zm358 358q39 17
+                                79.5 27t81.5 13v-88l-94-19-67 67ZM241-600Zm358 358Z"/>
+                        </svg>
+                        <span id="telephone">+32 (0) 4 51 51 51 51</span>
+                    </p>
+                    <p class="footer-email">
+                        <svg class="footer-img-mail svg-footer-info" xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960">
+                            <path d="M160-160q-33 0-56.5-23.5T80-240v-480q0-33 23.5-56.5T160-800h640q33 0
+                                56.5 23.5T880-720v480q0 33-23.5 56.5T800-160H160Zm320-280L160-640v400h640v-400L480-440Zm0-80
+                                320-200H160l320 200ZM160-640v-80 480-400Z"/>
+                        </svg>
+                        <span id="mail-info">info@blanchisserie.com</span>
+                    </p>
+                    <div class="footer-adresse">
+                        <span id="footer-nom-entreprise">Blanchisserie Ind</span><br>
+                        <span id="footer-rue-entreprise">Rue du paray 154 - </span>
+                        <span id="footer-localite-entreprise">4031 Liege</span><br>
+                        <span id="footer-pays-entreprise">Belgique</span>
+                    </div>
+                </div>
+            </div>
+                <!-- === liens rapides === -->
+                <div class="contenu-footer">
+                    <h2 class="titre-footer titre-footer-services">Liens Rapides</h2>
+                    <ul class="liens-rapides">
+                        <!-- === liens : A propos === -->
+                        <li>
+                        <a href="./AboutUs.html" class="liens-rapides-logo liens-rapides-about">
+                            <svg class="footer-img-arrow" xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960">
+                                <path d="m321-80-71-71 329-329-329-329 71-71 400 400L321-80Z"/>
+                            </svg>
+                            <span class="footer-lien-rapide-text" id="footer-lien-about">À propos</span>
+                        </a>
+                    </li>
+                        <!-- === liens : Linges === -->
+                        <li>
+                            <a href="./Linges.html" class="liens-rapides-logo liens-rapides-services">
+                                <svg class="footer-img-arrow" xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960">
+                                    <path d="m321-80-71-71 329-329-329-329 71-71 400 400L321-80Z"/>
+                                </svg>
+                                <span class="footer-lien-rapide-text" id="footer-lien-services">Les Linges</span>
+                            </a>
+                        </li>
+                        <!-- === liens : Chaussures === -->
+                        <li>
+                                <a href="./Chaussures.html" class="liens-rapides-logo liens-rapides-horaire">
+                                    <svg class="footer-img-arrow" xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960">
+                                        <path d="m321-80-71-71 329-329-329-329 71-71 400 400L321-80Z"/>
+                                    </svg>
+                                    <span class="footer-lien-rapide-text" id="footer-lien-horaire"> Les Chaussures</span>
+                                </a>
+                            </li>
+                        <!-- === liens : Tarifs & abonnement === -->
+                        <li>
+                            <a href="./Tarifs.html" class="liens-rapides-logo liens-rapides-prix">
+                                <svg class="footer-img-arrow" xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960">
+                                    <path d="m321-80-71-71 329-329-329-329 71-71 400 400L321-80Z"/>
+                                </svg>
+                                <span class="footer-lien-rapide-text" id="footer-lien-prix">Abonnement & Tarif</span>
+                            </a>
+                        </li>
+                        <!-- === liens : Contactez-nous === -->
+                        <li>
+                            <a href="./ContactUs.html" class="liens-rapides-logo liens-rapides-contact">
+                                <svg class="footer-img-arrow" xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960">
+                                    <path d="m321-80-71-71 329-329-329-329 71-71 400 400L321-80Z"/>
+                                </svg>
+                                <span class="footer-lien-rapide-text" id="footer-lien-contact">Contactez-nous</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <!-- === News-letters === -->
+                <div class="contenu-footer">
+                    <h2 class="titre-footer titre-footer-newsletter">Newsletter</h2>
+                    <p class="footer-news-description">
+                        lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.
+                    </p>
+                    <div class="newsletter-form">
+                        <form class="footer-form" action="#">
+                            <label for="footer-email"></label>
+                            <input type="email" name="email" id="footer-email" placeholder="Votre adresse email">
+                            <input type="submit" value="S'inscrire" id="footer-inscription-newsletter">
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="./Javascript/Linges.js"></script>
+
+</body>
+</html>

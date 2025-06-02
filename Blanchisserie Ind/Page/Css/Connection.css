@@ -1,0 +1,431 @@
+/* declaration des variable */
+/*--------------------------------------------------------------------*/
+:root {
+    /* Tromp de la page pc */
+    --conteneur-principal-size: 850px;
+
+    /* mes couleur */
+
+    /*-- couleur Principale: Blanc Immaculé pour la propreté --*/
+    --color-blanc: #FFFFFFFF;
+    --color-branc-transparent: rgba(255, 255, 255, 0.88);
+    --color-gris-claire: #f0f0f0;
+
+    /*-- couleur secondaire: bleue limpide pour l'eau et le nettoyage --*/
+    --color-bleue-fonce: #0056b3 ;
+    --color-bleue-noicy: #0042a6;
+    --color-bleue-claire: rgba(0, 86, 179, 0.82);
+
+    /*-- couleur tertiaire: gris acier pour l'insdutriel --*/
+    --color-gris-fonce: #7e7e7e;
+    --color-text: #333333;
+
+    /*-- couleur de focus: Orange tomate moderne pour la reference au taches --*/
+    --color-accent: #ff6f61;
+
+    /*-- design des bouttons en neumorphisme --*/
+    --boutton-blanc: 8px 8px 16px var(--color-gris-claire),
+    -8px -8px 16px var(--color-blanc);
+    --boutton-blanc-active: inset 6px 6px 10px var(--color-gris-claire),
+    inset -6px -6px 10px var(--color-blanc);
+    --boutton-bleue: 8px 8px 16px var(--color-bleue-noicy),
+    -8px -8px 16px var(--color-bleue-fonce);
+    --boutton-bleue-active: inset 6px 6px 10px var(--color-bleue-noicy),
+    inset -6px -6px 10px var(--color-bleue-fonce);
+}
+/*-- animation des fleches va-et-vient --*/
+@keyframes anim_arrow_move_1 {
+    0% {
+        transform: translateX(10px);
+        transition:transform 200ms ease-in-out ;
+    }
+    100% {
+        transform: translateX(0px);
+        transition:transform 200ms ease-in-out ;
+    }
+}
+/*-- animation du grosissement des icon reseaux sociaux --*/
+@keyframes anim_scaleUp_move_1 {
+    0% {
+        transform: scale(1);
+        fill: var(--color-gris-claire);
+        transition:all 200ms ease-in-out ;
+    }
+    100% {
+        transform: scale(1.5);
+        fill: var(--color-accent);
+        transition:all 200ms ease-in-out ;
+    }
+}
+
+/*------ la methode SMACSS ------*/
+/*--------------------------------------------------------------------*/
+/*--  Bases ( body,p,h1,h2.... ) --*/
+/*--------------------------------------------------------------------*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Calibri Light", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    color: var(--color-text);
+    list-style: none;
+    text-decoration: none;
+}
+
+body {
+    min-height: 100vh;
+    font-size: 1.2rem;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    background: linear-gradient(-90deg, #ffffff, #cacad0, #ffffff);
+}
+
+.logo {
+    width: 150px;
+    height: 150px;
+}
+
+.btn {
+    width: 150px;
+    height: 50px;
+    font-size: 1.2rem;
+    color: var(--color-accent);
+    background-color: var(--color-blanc);
+    transition: background-color 0.3s ease-in-out;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    cursor: pointer;
+    outline: none;
+    font-weight: 500;
+}
+/*--------------------------------------------------------------------*/
+.section{
+    width: 100%;
+    padding-left: calc(50% - var(--conteneur-principal-size)/2);
+    padding-right: calc(50% - var(--conteneur-principal-size)/2);
+}
+
+.conteneur {
+    position: relative;
+    width: 100%;
+    height: 550px;
+    background-color: var(--color-blanc);
+    border-radius: 30px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: space-between;
+    align-items: center;
+}
+/*---------------conteneur-deco--------------------------------*/
+.conteneur-deco {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 50%;
+    height: 100%;
+    background-color: var(--color-bleue-fonce);
+    transition: transform 0.8s ease-in-out 0.0s,
+                border-radius 0.8s ease-in-out 0.6s,
+                background-color 0.3s ease-in-out 0.2s;
+    border-radius: 0 130px 130px 0;
+    z-index: 1;
+}
+
+.panneaux-deco {
+    .pan-deco{
+        position: absolute;
+        width: 100%;
+        padding: 20px;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        flex-wrap: nowrap;
+        gap: 10px;
+    }
+}
+
+.panneaux-deco .deco-droite {
+    display: none;
+}
+
+.deco-droite-p,
+.deco-gauche-p{
+    color: var(--color-gris-claire);
+    font-size: 1.2rem;
+}
+
+/*---------------conteneur_form--------------------------------*/
+
+.conteneur_form {
+    width: 50%;
+    height: 100%;
+    padding: 40px;
+    background-color: var(--color-blanc);
+    transition:  0.6s ease-in-out,
+                visibility 0.6s ease-in-out;
+    transition-delay: 0.2s;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    form{
+        width: 100%;
+        display: flex;
+        gap: 5px;
+        flex-direction: column;
+        align-content: center;
+        justify-content: center;
+        align-items: center
+    }
+
+}
+
+.enregistrement {
+    transform: translateX(100%);
+    transition: transform 0.2s ease-in-out 0.1s,
+    visibility 0.1s ease-in-out 0.1s;
+    visibility: hidden;
+}
+
+.login {
+    display: flex;
+    visibility: visible;
+    transform: translateX(0%);
+    transition: transform 0.8s ease-in-out 0.4s,
+    visibility 0.8s ease-in-out 0.6s;
+}
+
+.deco-titre {
+    color: var(--color-blanc);
+    font-size: 3rem;
+}
+
+.Sous-titre {
+    font-size: 2.4rem;
+    margin: 10px 0;
+    color: var(--color-gris-fonce);
+}
+
+.input-zone {
+    width: 100%;
+    padding: 13px 50px 13px 20px;
+    background-color: var(--color-gris-claire);
+    border-radius: 8px;
+    border: none;
+    outline: none;
+    font-size: 1.2rem;
+    color: var(--color-accent);
+}
+
+.conteneur_input{
+    position: relative;
+    width: 100%;
+    .input-label {
+        display: flex;
+        position: absolute;
+        top: 50%;
+        right: 20px;
+        transform: translateY(-50%);
+    }
+}
+
+.conteneur_D-oublie {
+    margin: 15px 0 15px;
+    > a {
+        font-size: 1.1rem;
+        text-decoration: none;
+        font-style: italic;
+        color: var(--color-accent);
+    }
+}
+
+.input-label > svg {
+    width: 24px;
+    height: 24px;
+    fill: var(--color-accent);
+
+}
+
+.svg-social-media {
+    width: 30px;
+    height: 30px;
+    margin: 0 5px;
+    fill: var(--color-gris-fonce);
+}
+
+.svg-social-media:hover {
+    animation: anim_scaleUp_move_1 0.5s alternate-reverse infinite;
+}
+
+.enregistrement-btn,
+.connection-btn {
+    margin: 20px 0;
+    width: 100%;
+    height: 48px;
+    background-color: var(--color-bleue-fonce);
+    color: var(--color-blanc);
+}
+
+.enregistrement-btn:hover,
+.connection-btn:hover{
+    background-color: var(--color-blanc);
+    box-shadow: var(--boutton-blanc);
+    color: var(--color-accent);
+    font-weight: 500;
+    transition: all 0.6s ease-in-out;
+}
+
+.enregistrement-btn:active,
+.connection-btn:active{
+    box-shadow: var(--boutton-blanc-active);
+}
+
+.deco-enregist-btn,
+.deco-connect-btn{
+    margin-top: 10px;
+}
+
+.deco-enregist-btn:hover,
+.deco-connect-btn:hover{
+    background-color: transparent;
+    border: 1px solid var(--color-blanc);
+    color: var(--color-blanc);
+    font-weight: 500;
+    transition: all 0.6s ease-in-out;
+}
+
+.deco-enregist-btn:active,
+.deco-connect-btn:active{
+    box-shadow: var(--boutton-blanc-active);
+}
+
+.conditions-generales {
+    display: flex;
+    flex-direction: row-reverse;
+    flex-wrap: nowrap;
+    justify-content: space-evenly;
+    gap: 10px;
+    padding: 10px 5%;
+    font-size: 1rem;
+}
+
+.input-regist-label-cdm {
+    color: var(--color-gris-fonce);
+    span {
+        color: var(--color-accent);
+    }
+
+}
+/*---------------conteneur_ Active--------------------------------*/
+.conteneur.active .conteneur-deco{
+    transform: translateX(100%);
+    transition: transform 0.8s ease-in-out 0.0s,
+                border-radius 0.8s ease-in-out 0.6s;
+    border-radius: 130px 0 0 130px;
+}
+
+.conteneur.active .deco-gauche{
+    display: none;
+    transition-delay: 0.2s;
+}
+
+.conteneur.active .deco-droite{
+    display: flex;
+}
+
+.conteneur.active .enregistrement{
+    transform: translateX(0%);
+    transition: transform 0.8s ease-in-out 0.4s,
+                visibility 0.8s ease-in-out 0.6s;
+    visibility: visible;
+    display: flex;
+}
+
+.conteneur.active .login{
+    transform: translateX(-100%);
+    transition: transform 0.2s ease-in-out 0.1s,
+                visibility 0.1s ease-in-out 0.1s;
+    visibility: hidden;
+}
+/*--------------------------------------------------------------------------------*/
+/* media tablettes */
+@media  screen and (max-width: 850px) {
+    body{
+        display: flex;
+        justify-content: flex-start;
+    }
+
+    .conteneur {
+        height: 1000px;
+        margin: 0;
+    }
+
+    .conteneur-deco {
+        width: 100%;
+        height: 35%;
+        top: 0;
+        padding-top: 0;
+        border-radius: 0 0 100px 100px;
+    }
+    .conteneur.active .conteneur-deco {
+        transform: translateY(0%);
+        border-radius: 0 0 100px 100px;
+        background-color: var(--color-accent);
+        transition: background-color 0.3s ease-in-out 0.2s;
+    }
+
+    .conteneur_form {
+        width: 100%;
+        height: 50%;
+        padding: 40px;
+    }
+
+    .enregistrement {
+        transform: translateY(0%);
+        margin-top: 0;
+        height: 380px;
+    }
+    .conteneur.active .enregistrement {
+        transform: translateY(100%);
+        .enregistrement-btn{
+            background-color: var(--color-accent);
+            color: var(--color-blanc);
+            transition: background-color 0.3s ease-in-out 0.2s;
+        }
+    }
+
+    .login {
+        transform: translateY(0%);
+    }
+    .conteneur.active .login {
+        transform: translateY(-100%);
+    }
+}
+/* media smartphone */
+@media  screen and (max-width: 450px) {
+    .logo {
+        width: 80px;
+        height: 80px;
+    }
+
+    .conteneur {
+        height: 844px;
+        margin: 0;
+    }
+
+}
