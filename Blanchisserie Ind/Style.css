@@ -680,12 +680,6 @@
     margin-top: 20px;
 }
 
-/*.liens-rapides > li:not(hover)  {
-    color: var(--color-gris-claire);
-    .footer-img-arrow{
-        fill: var(--color-gris-fonce);
-    }
-}*/
 
 /*--------------------------------------------------------------------*/
 /* zone du responsive */
@@ -832,7 +826,11 @@
 }
 /* media smartphone */
 @media  screen and (max-width: 450px) {
-
+    .btn-slider svg{
+        height: 50px;
+        width: 50px;
+    }
+    
     .text-slider-description {
         margin-left: 10px;
     }
