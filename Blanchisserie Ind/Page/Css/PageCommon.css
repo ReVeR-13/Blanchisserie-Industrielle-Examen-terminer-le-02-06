@@ -1255,6 +1255,10 @@ footer{
 }
 /* media smartphone */
 @media  screen and (max-width: 430px) {
+    .footer-information {
+        margin-top: 0;
+    }
+    
     .footer-background{
         animation: anim_vague_footer 10s alternate-reverse ease-in-out infinite;
     }
