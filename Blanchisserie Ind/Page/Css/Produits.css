@@ -201,6 +201,10 @@
     align-items: center;
 }
 
+.filtre-range {
+    width: 50%;
+}
+
 .detail-prix {
     font-size: 1.5rem;
     font-weight: 300;
