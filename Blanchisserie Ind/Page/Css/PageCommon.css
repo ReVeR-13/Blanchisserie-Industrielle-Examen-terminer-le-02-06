@@ -1254,7 +1254,7 @@ footer{
 
 }
 /* media smartphone */
-@media  screen and (max-width: 430px) {
+@media  screen and (max-width: 431px) {
     .footer-information {
         margin-top: 0;
     }
