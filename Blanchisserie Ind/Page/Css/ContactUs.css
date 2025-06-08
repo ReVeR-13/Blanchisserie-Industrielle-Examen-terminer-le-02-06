@@ -290,7 +290,7 @@ textarea:valid + .message_form_label {
     }
 }
 
-@media  screen and (max-width: 430px) {
+@media  screen and (max-width: 431px) {
     .inscription-btn {
         width: 80px;
         padding: 0 5px;
